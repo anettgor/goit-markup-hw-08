@@ -26,6 +26,7 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: inline;
 }
 
 h1,
@@ -77,12 +78,17 @@ a {
 }
 
 /* nav and footer*/
-
+.navbar__border {
+  border-bottom: 1px solid #ececec;
+  margin: 0;
+  padding: 0;
+}
 .menu {
   height: 80px;
   margin-left: 215px;
-  border-bottom: 1px solid #ececec;
+
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 25px 0 24px 0;
 }
@@ -219,12 +225,19 @@ a {
   justify-content: space-between;
   gap: 30px;
 }
+.our-team__text {
+  text-align: center;
+  padding: 30px 0 30px 0;
+  margin-top: -4px;
+}
 .our-team__name {
   font-weight: 500;
   font-size: 16px;
+  padding-bottom: 10px;
 }
 .our-team__occupation {
   color: var(--grey);
+  margin: 0;
 }
 
 .our-team__tag {
@@ -238,7 +251,8 @@ a {
 /* Portfolio page */
 
 /* buttons */
-.button__btn {
+
+.button-list__item {
   font-weight: 500;
   text-align: center;
   line-height: 1.62;
@@ -248,8 +262,8 @@ a {
   border-radius: 4px;
 }
 
-.button__btn:hover,
-.button__btn:focus {
+.button-list__item:hover,
+.button-list__item:focus {
   color: var(--white);
   background: var(--blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -257,19 +271,45 @@ a {
   border-radius: 4px;
 }
 
-/* portfolio items */
+.button-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 100px 0 50px;
+  margin-left: 215px;
+}
 
-.portfolio-container__item {
-  box-sizing: border-box;
+/* portfolio items */
+.portfolio-cards {
+  margin-left: 215px;
+  margin-bottom: 94px;
+}
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+/* .portfolio-container__item {
   border: 1px solid var(--productborder);
+} */
+
+.portfolio-container__text-border {
+  border: 1px solid var(--productborder);
+  margin-top: -5px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .portfolio-container__text {
   color: var(--grey);
   line-height: 1.88;
+  margin: 0;
 }
 .portfolio-container__heading {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   font-weight: 700;
+  padding-bottom: 4px;
 }
