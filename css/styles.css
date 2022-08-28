@@ -45,6 +45,10 @@ a {
   width: 1200px;
 }
 
+.section {
+  padding: 94px 0 94px 215px;
+}
+
 /* logo and links */
 
 .logo,
@@ -83,12 +87,14 @@ a {
   padding: 0;
 }
 .menu {
-  height: 80px;
-  margin-left: 215px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 25px 0 24px 0;
+}
+
+header {
+  padding-left: 215px;
 }
 
 .navbar {
@@ -171,9 +177,7 @@ a {
 }
 
 /* container with lorem ipsums */
-.our-strengths-section {
-  margin: 94px 0 94px 215px;
-}
+
 .our-strengths {
   display: flex;
   justify-content: space-around;
@@ -193,8 +197,7 @@ a {
 
 /* containter Czym się zajmujemy */
 .what-we-do {
-  padding-left: 215px;
-  margin-bottom: 94px;
+  padding-top: 94px;
 }
 .what-we-do__title,
 .our-team__title {
@@ -215,7 +218,6 @@ a {
 /* containter - team */
 .our-team {
   width: 1600px;
-  padding: 94px 0 94px 215px;
   background: #f5f4fa;
 }
 .our-team__list {
@@ -273,24 +275,17 @@ a {
   display: flex;
   justify-content: center;
   gap: 8px;
-  padding: 100px 0 50px;
-  margin-left: 215px;
+  padding-bottom: 50px;
 }
 
 /* portfolio items */
-.portfolio-cards {
-  margin-left: 215px;
-  margin-bottom: 94px;
-}
+
 .portfolio-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
-/* .portfolio-container__item {
-  border: 1px solid var(--productborder);
-} */
 
 .portfolio-container__text-border {
   border: 1px solid var(--productborder);
