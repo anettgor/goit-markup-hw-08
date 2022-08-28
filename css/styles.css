@@ -91,10 +91,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 25px 0 24px 0;
-}
-
-header {
-  padding-left: 215px;
+  margin-left: 215px;
 }
 
 .navbar {
