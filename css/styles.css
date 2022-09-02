@@ -229,26 +229,26 @@ a {
 
 .our-strengths {
   display: flex;
-  justify-content: space-around;
+
   gap: 30px;
 }
 
 .our-strengths__icon {
   background: var(--offwhite);
-  height: 120px;
-  width: 270px;
+  padding: 25px 100px;
   margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 270px;
+  height: 120px;
 }
 .our-strengths__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 
 .our-strengths__content {
+  letter-spacing: 0.03em;
   line-height: 1.71;
   font-size: 14px;
   color: var(--grey);
