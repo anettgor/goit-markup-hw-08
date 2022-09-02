@@ -11,7 +11,7 @@
   --footerlinks: #ffffff99;
   --border: #ececec;
   --footericon: rgba(255, 255, 255, 0.1);
-  --clientlogo: #afb1b8;
+  --icons: #afb1b8;
 }
 
 body {
@@ -132,9 +132,6 @@ a {
 .navbar__icon-spacing {
   margin-right: 10px;
 }
-/* .navbar__icon:hover {
-  fill: var(--blue);
-} */
 
 .footer {
   background: var(--graphite);
@@ -235,6 +232,16 @@ a {
   justify-content: space-around;
   gap: 30px;
 }
+
+.our-strengths__icon {
+  background: var(--offwhite);
+  height: 120px;
+  width: 270px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .our-strengths__title {
   font-weight: 700;
   font-size: 14px;
@@ -306,10 +313,11 @@ a {
 .our-team__social-media {
   width: 44px;
   height: 44px;
-  fill: var(--clientlogo);
+  fill: var(--icons);
   cursor: pointer;
 }
-.our-team__social-media:hover {
+.our-team__social-media:hover,
+.our-team__social-media:focus {
   background: var(--blue);
   border-radius: 50%;
   fill: var(--white);
@@ -321,14 +329,15 @@ a {
 }
 
 .clients__logo {
-  fill: var(--clientlogo);
-  border: 1px solid var(--clientlogo);
+  fill: var(--icons);
+  border: 1px solid var(--icons);
   border-radius: 4px;
   width: 170px;
   height: 92px;
   cursor: pointer;
 }
-.clients__logo:hover {
+.clients__logo:hover,
+.clients__logo:focus {
   fill: var(--blue);
   border-color: var(--blue);
 }
@@ -380,6 +389,7 @@ a {
 .portfolio-container__text {
   color: var(--grey);
   line-height: 1.88;
+  margin: 0;
 }
 .portfolio-container__heading {
   font-size: 18px;
