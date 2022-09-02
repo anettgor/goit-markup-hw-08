@@ -84,6 +84,7 @@ a {
 }
 .contact-link {
   color: var(--grey);
+  fill: var(--grey);
 }
 
 .link-underline {
@@ -125,15 +126,15 @@ a {
 .footer__item:hover,
 .footer__item:focus {
   color: var(--blue);
-}
-
-.navbar__icon {
-  margin-right: 10px;
-  fill: var(--grey);
-}
-.navbar__icon:hover {
   fill: var(--blue);
 }
+
+.navbar__icon-spacing {
+  margin-right: 10px;
+}
+/* .navbar__icon:hover {
+  fill: var(--blue);
+} */
 
 .footer {
   background: var(--graphite);
@@ -278,7 +279,6 @@ a {
 .our-team__text {
   text-align: center;
   padding-top: 30px;
-  padding-bottom: 30px;
   margin-top: -4px;
 }
 .our-team__name {
@@ -297,11 +297,40 @@ a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.our-team__social-media-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  gap: 10px;
+}
+.our-team__social-media {
+  width: 44px;
+  height: 44px;
+  fill: var(--clientlogo);
+  cursor: pointer;
+}
+.our-team__social-media:hover {
+  background: var(--blue);
+  border-radius: 50%;
+  fill: var(--white);
+}
 .clients {
   display: flex;
+  list-style: none;
+  gap: 30px;
 }
+
 .clients__logo {
   fill: var(--clientlogo);
+  border: 1px solid var(--clientlogo);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  cursor: pointer;
+}
+.clients__logo:hover {
+  fill: var(--blue);
+  border-color: var(--blue);
 }
 /* Portfolio page */
 
