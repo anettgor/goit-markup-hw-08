@@ -183,8 +183,8 @@ a {
   fill: var(--white);
   cursor: pointer;
 }
-.social-media__logo:hover,
-.social-media__logo:focus {
+.social-media__logo-focus:hover svg,
+.social-media__logo-focus:focus svg {
   background: var(--blue);
 }
 /* index page */
@@ -316,15 +316,14 @@ a {
   fill: var(--icons);
   cursor: pointer;
 }
-.our-team__social-media:hover,
-.our-team__social-media:focus {
+.our-team__social-media-focus:hover svg,
+.our-team__social-media-focus:focus svg {
   background: var(--blue);
   border-radius: 50%;
   fill: var(--white);
 }
 .clients {
   display: flex;
-  list-style: none;
   gap: 30px;
 }
 
@@ -332,12 +331,16 @@ a {
   fill: var(--icons);
   border: 1px solid var(--icons);
   border-radius: 4px;
+}
+.clients__logo-focus {
+  display: flex;
   width: 170px;
   height: 92px;
   cursor: pointer;
 }
-.clients__logo:hover,
-.clients__logo:focus {
+
+.clients__logo-focus:hover svg,
+.clients__logo-focus:focus svg {
   fill: var(--blue);
   border-color: var(--blue);
 }
