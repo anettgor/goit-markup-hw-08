@@ -168,8 +168,8 @@ a {
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-bottom: 20px;
   padding-top: 12px;
+  padding-bottom: 20px;
 }
 .social-media {
   display: flex;
