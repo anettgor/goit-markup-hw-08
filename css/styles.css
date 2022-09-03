@@ -169,6 +169,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-bottom: 20px;
+  padding-top: 12px;
 }
 .social-media {
   display: flex;
@@ -197,9 +198,6 @@ a {
 }
 .banner__background {
   background: var(--graphite); /*FALLBACK COLOR*/
-}
-
-.banner__image {
   background-image: linear-gradient(
       0deg,
       rgba(47, 48, 58, 0.4) 0%,
@@ -406,7 +404,7 @@ a {
   font-weight: 700;
   padding-bottom: 4px;
 }
-.portfolio-container__item {
+.portfolio-container__text-color {
   cursor: pointer;
   color: var(--charcoal);
 }
