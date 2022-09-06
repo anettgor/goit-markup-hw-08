@@ -91,6 +91,19 @@ a {
   text-decoration: underline;
 }
 
+.navbar__item-box {
+  position: relative;
+}
+.active::after {
+  position: absolute;
+  content: "";
+  background: var(--blue);
+  height: 4px;
+  border-radius: 2px;
+  width: 100%;
+  left: 0;
+  bottom: -32px;
+}
 /* nav and footer*/
 .navbar__border {
   border-bottom: 1px solid var(--border);
@@ -118,7 +131,7 @@ a {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 }
 .navbar__item:hover,
@@ -250,7 +263,7 @@ a {
 .our-strengths__title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 }
 
@@ -279,6 +292,29 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+}
+
+.what-we-do__label-box {
+  position: relative;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.what-we-do__label {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  background: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 /* containter - team */
