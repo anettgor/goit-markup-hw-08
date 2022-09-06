@@ -127,6 +127,8 @@ a {
 .footer__item:focus {
   color: var(--blue);
   fill: var(--blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navbar__icon-spacing {
@@ -184,9 +186,11 @@ a {
   fill: var(--white);
   cursor: pointer;
 }
-.social-media__logo-focus:hover svg,
+.social-media__logo:hover,
 .social-media__logo-focus:focus svg {
   background: var(--blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* index page */
 
@@ -319,8 +323,11 @@ a {
   fill: var(--icons);
   cursor: pointer;
 }
-.our-team__social-media-focus:hover svg,
+.our-team__social-media:hover,
 .our-team__social-media-focus:focus svg {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* CHECK */
   background: var(--blue);
   border-radius: 50%;
   fill: var(--white);
@@ -342,10 +349,12 @@ a {
   cursor: pointer;
 }
 
-.clients__logo-focus:hover svg,
+.clients__logo:hover,
 .clients__logo-focus:focus svg {
   fill: var(--blue);
   border-color: var(--blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Portfolio page */
 
@@ -368,6 +377,8 @@ a {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-list {
@@ -412,4 +423,6 @@ a {
 .portfolio-container__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
