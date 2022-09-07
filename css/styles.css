@@ -133,6 +133,9 @@ a {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navbar__item:hover,
 .navbar__item:focus,
@@ -140,8 +143,6 @@ a {
 .footer__item:focus {
   color: var(--blue);
   fill: var(--blue);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navbar__icon-spacing {
@@ -198,12 +199,13 @@ a {
   border-radius: 50%;
   fill: var(--white);
   cursor: pointer;
-}
-.social-media__logo:hover,
-.social-media__logo-focus:focus svg {
-  background: var(--blue);
+  transition-property: background;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-media__logo-focus:hover svg,
+.social-media__logo-focus:focus svg {
+  background: var(--blue);
 }
 /* index page */
 
@@ -359,14 +361,17 @@ a {
   fill: var(--icons);
   cursor: pointer;
 }
-.our-team__social-media:hover,
+
+.our-team__social-media-focus:hover svg,
 .our-team__social-media-focus:focus svg {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* CHECK */
+
   background: var(--blue);
   border-radius: 50%;
   fill: var(--white);
+  transition-property: background, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients {
   display: flex;
@@ -377,6 +382,9 @@ a {
   fill: var(--icons);
   border: 1px solid var(--icons);
   border-radius: 4px;
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__logo-focus {
   display: flex;
@@ -385,12 +393,10 @@ a {
   cursor: pointer;
 }
 
-.clients__logo:hover,
+.clients__logo-focus:hover svg,
 .clients__logo-focus:focus svg {
   fill: var(--blue);
   border-color: var(--blue);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Portfolio page */
 
