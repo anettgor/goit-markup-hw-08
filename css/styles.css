@@ -360,18 +360,16 @@ a {
   height: 44px;
   fill: var(--icons);
   cursor: pointer;
+  border-radius: 50%;
+  transition-property: background, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team__social-media-focus:hover svg,
 .our-team__social-media-focus:focus svg {
-  /* CHECK */
-
   background: var(--blue);
-  border-radius: 50%;
   fill: var(--white);
-  transition-property: background, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients {
   display: flex;
