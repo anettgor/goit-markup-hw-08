@@ -13,7 +13,9 @@
   --footericon: rgba(255, 255, 255, 0.1);
   --icons: #afb1b8;
 }
-
+:focus {
+  outline: none;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: var(--charcoal);
@@ -465,4 +467,34 @@ a {
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-container__hidden {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
+}
+.portfolio-container__overlay {
+  position: absolute;
+  background: var(--blue);
+  opacity: 0.9;
+  padding: 49px 45px 49px 24px;
+  transform: translateY(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-container__overlay > p {
+  color: var(--white);
+  font-size: 18px;
+  line-height: 1.56;
+  margin: 0;
+}
+.portfolio-container__hidden:hover .portfolio-container__overlay {
+  transform: translateY(0);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
