@@ -75,7 +75,9 @@
               DLA WASZEGO BIZNESU
             </h1>
 
-            <button type="button" class="banner__button">Zamów usługe</button>
+            <button type="button" class="banner__button" data-modal-open>
+              Zamów usługe
+            </button>
           </div>
         </div>
       </section>
@@ -148,36 +150,36 @@
             <ul class="what-we-do__list">
               <li>
                 <div class="what-we-do__label-box">
+                  <p class="what-we-do__label">aplikacje komputerowe</p>
                   <img
                     src="./images/close-up-image-programer-working-his-desk-office_1098-18707.jpg"
                     alt="programista piszący kod"
                     width="370"
                     height="294"
                   />
-                  <p class="what-we-do__label">aplikacje komputerowe</p>
                 </div>
               </li>
 
               <li>
                 <div class="what-we-do__label-box">
+                  <p class="what-we-do__label">aplikacje mobilne</p>
                   <img
                     src="./images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg"
                     alt=" kobieta sprawdzająca układ strony mobilnej z telefonem"
                     width="370"
                     height="294"
                   />
-                  <p class="what-we-do__label">aplikacje mobilne</p>
                 </div>
               </li>
               <li>
                 <div class="what-we-do__label-box">
+                  <p class="what-we-do__label">rozwiązania graficzne</p>
                   <img
                     src="./images/creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg"
                     alt="osoba trzymająca tablet z wyświetloną siatką kolorów"
                     width="370"
                     height="294"
                   />
-                  <p class="what-we-do__label">rozwiązania graficzne</p>
                 </div>
               </li>
             </ul>
@@ -629,7 +631,15 @@
         </div>
       </div>
     </footer>
-    <div class="modal"></div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="banner__modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg>
+            <use href="./images/icon.svg#close-icon" x="9" y="8"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
