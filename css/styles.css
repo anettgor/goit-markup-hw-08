@@ -508,7 +508,7 @@ a {
   line-height: 1.56;
   margin: 0;
 }
-.portfolio-container__item:hover,
+.portfolio-container__item:hover .portfolio-container__overlay,
 .portfolio-container__item:focus-within .portfolio-container__overlay {
   transform: translateY(0);
 }
