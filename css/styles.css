@@ -12,6 +12,7 @@
   --border: #ececec;
   --footericon: rgba(255, 255, 255, 0.1);
   --icons: #afb1b8;
+  --basic-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 * {
   margin: 0;
@@ -158,8 +159,7 @@ textarea {
   line-height: 1.17;
   letter-spacing: 0.02em;
   transition-property: color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--basic-transition);
 }
 .navbar__item:hover,
 .navbar__item:focus,
@@ -199,8 +199,7 @@ textarea {
   font-style: normal;
   line-height: 1.71;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--basic-transition);
 }
 
 .footer__container {
@@ -230,8 +229,7 @@ textarea {
   border-radius: 50%;
   fill: var(--white);
   transition-property: background;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--basic-transition);
 }
 .social-media__logo-focus:hover svg,
 .social-media__logo-focus:focus svg {
@@ -318,7 +316,6 @@ textarea {
   width: 200px;
   padding: 10px 42px;
   line-height: 1.88;
-
   border-radius: 4px;
 }
 
@@ -326,7 +323,6 @@ textarea {
 
 .our-strengths {
   display: flex;
-
   gap: 30px;
 }
 
@@ -368,6 +364,7 @@ textarea {
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
+
 .what-we-do__label {
   position: absolute;
   text-transform: uppercase;
@@ -430,8 +427,7 @@ textarea {
   cursor: pointer;
   border-radius: 50%;
   transition-property: background, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--basic-transition);
 }
 
 .our-team__social-media-focus:hover svg,
@@ -449,8 +445,7 @@ textarea {
   border: 1px solid var(--icons);
   border-radius: 4px;
   transition-property: border-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--basic-transition);
 }
 .clients__logo-focus {
   display: flex;
@@ -477,8 +472,7 @@ textarea {
   background: var(--offwhite);
   border-radius: 4px;
   transition-property: box-shadow, background, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--basic-transition);
 }
 
 .button-list__item:hover,
@@ -553,8 +547,7 @@ textarea {
   padding: 49px 45px 49px 24px;
   transition-property: transform;
   transform: translateY(100%);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--basic-transition);
 }
 
 .portfolio-container__overlay-text {
@@ -581,8 +574,7 @@ textarea {
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
   transition-property: opacity, visibility;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--basic-transition);
 }
 
 .banner__modal {
@@ -640,6 +632,7 @@ textarea {
   width: 448px;
   height: 40px;
   padding: 14px 42px;
+  margin-top: 4px;
 }
 
 .modal-form__textarea {
@@ -661,10 +654,8 @@ textarea {
   left: 15px;
 }
 
-.modal-form__box:hover,
-.modal-form__box:focus-within,
-.input-features:hover,
-.input-features:focus-within {
+.form-style-accent:hover,
+.form-style-accent:focus-within {
   fill: var(--blue);
   border-color: var(--blue);
 }

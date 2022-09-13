@@ -639,7 +639,7 @@
                 type="email"
                 placeholder="E-mail"
                 name="email"
-                class="newsletter__input"
+                class="newsletter__input form-style-accent"
               />
 
               <button type="submit" class="newsletter__btn">
@@ -667,41 +667,37 @@
           </svg>
         </button>
 
-        <form class="modal-form">
+        <form class="modal-form text-style">
           <legend class="modal-form__heading">
             Zostaw swoje dane w formularzu poniżej
           </legend>
 
-          <label class="modal-form__box text-style">
+          <label class="modal-form__box form-style-accent">
             Imie
             <svg width="12" height="12" class="modal-form__icon">
               <use href="./images/icon.svg#icon-user"></use>
             </svg>
-            <input type="text" name="name" class="input-features text-style" />
+            <input
+              type="text"
+              name="name"
+              class="input-features form-style-accent"
+            />
           </label>
-          <label class="modal-form__box text-style">
+          <label class="modal-form__box">
             Telefon
             <svg width="12" height="12" class="modal-form__icon">
               <use href="./images/icon.svg#icon-phone"></use>
             </svg>
-            <input
-              type="tel"
-              name="phone_number"
-              class="input-features text-style"
-            />
+            <input type="tel" name="phone_number" class="input-features" />
           </label>
-          <label class="modal-form__box text-style">
+          <label class="modal-form__box">
             Email
             <svg width="12" height="12" class="modal-form__icon">
               <use href="./images/icon.svg#icon-msg"></use>
             </svg>
-            <input
-              type="email"
-              name="email"
-              class="input-features text-style"
-            />
+            <input type="email" name="email" class="input-features" />
           </label>
-          <label class="modal-form__box text-style">
+          <label class="modal-form__box">
             Komentarz
             <textarea
               name="comment"
