@@ -459,6 +459,7 @@ textarea {
   fill: var(--blue);
   border-color: var(--blue);
 }
+
 /* Portfolio page */
 
 /* buttons */
@@ -650,7 +651,7 @@ textarea {
 
 .modal-form__icon {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 15px;
 }
 
