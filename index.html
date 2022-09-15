@@ -681,6 +681,7 @@
               type="text"
               name="name"
               class="input-features form-style-accent"
+              required
             />
           </label>
           <label class="modal-form__box form-style-accent">
@@ -692,6 +693,7 @@
               type="tel"
               name="phone"
               class="input-features form-style-accent"
+              required
             />
           </label>
           <label class="modal-form__box form-style-accent">
@@ -703,30 +705,34 @@
               type="email"
               name="email"
               class="input-features form-style-accent"
+              required
             />
           </label>
           <label class="modal-form__box">
             Komentarz
             <textarea
               name="comment"
-              class="modal-form__textarea input-features"
+              class="modal-form__textarea input-features form-style-accent"
               placeholder="Wprowadź tekst"
             ></textarea>
           </label>
 
           <label class="modal-form__terms-and-conditions">
+            <input
+              class="modal-form__check"
+              type="checkbox"
+              name="terms-and-conditions"
+              value="accepted"
+            />
+            <svg class="checkbox" width="16" height="15">
+              <use href="./images/icon.svg#icon-tick"></use>
+            </svg>
             Oświadczam iż akceptuję
             <a href="" class="modal-form__link">Regulamin </a> i
             <a href="" class="modal-form__link">Politykę Prywatności.</a>
             <!-- <svg width="11" height="8" class="modal-form__icon">
               <use href="./images/icon.svg#icon-tick"></use>
             </svg> -->
-
-            <input
-              type="checkbox"
-              class="modal-form__check"
-              name="terms-and-conditions"
-            />
           </label>
 
           <button type="submit" class="modal-form__button">Wyślij</button>
