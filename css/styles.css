@@ -2,7 +2,7 @@
   --white: #fff;
   --offwhite: #f5f4fa;
   --black: #000;
-  --blue: #2196f3;
+  --accent: #2196f3;
   --grey: #757575;
   --charcoal: #212121;
   --graphite: #2f303a;
@@ -96,7 +96,7 @@ textarea {
 }
 
 .accent {
-  color: var(--blue);
+  color: var(--accent);
 }
 
 .link-style {
@@ -115,13 +115,13 @@ textarea {
   position: relative;
 }
 .active {
-  color: var(--blue);
+  color: var(--accent);
   position: relative;
 }
 .active::after {
   position: absolute;
   content: "";
-  background: var(--blue);
+  background: var(--accent);
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -165,8 +165,8 @@ textarea {
 .navbar__item:focus,
 .footer__item:hover,
 .footer__item:focus {
-  color: var(--blue);
-  fill: var(--blue);
+  color: var(--accent);
+  fill: var(--accent);
 }
 
 .navbar__icon-spacing {
@@ -233,7 +233,7 @@ textarea {
 }
 .social-media__logo-focus:hover svg,
 .social-media__logo-focus:focus svg {
-  background: var(--blue);
+  background: var(--accent);
 }
 
 .newsletter__heading {
@@ -249,6 +249,7 @@ textarea {
 
 .newsletter__box {
   display: flex;
+  gap: 12px;
 }
 
 .newsletter__input {
@@ -260,10 +261,9 @@ textarea {
   height: 50px;
   width: 358px;
   color: var(--white);
-  margin-right: 12px;
 }
 .newsletter__btn {
-  background: var(--blue);
+  background: var(--accent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -312,7 +312,7 @@ textarea {
 
 .banner__button {
   color: var(--white);
-  background: var(--blue);
+  background: var(--accent);
   border: none;
   width: 200px;
   padding: 10px 42px;
@@ -433,7 +433,7 @@ textarea {
 
 .our-team__social-media-focus:hover svg,
 .our-team__social-media-focus:focus svg {
-  background: var(--blue);
+  background: var(--accent);
   fill: var(--white);
 }
 .clients {
@@ -457,8 +457,8 @@ textarea {
 
 .clients__logo-focus:hover svg,
 .clients__logo-focus:focus svg {
-  fill: var(--blue);
-  border-color: var(--blue);
+  fill: var(--accent);
+  border-color: var(--accent);
 }
 
 /* Portfolio page */
@@ -480,7 +480,7 @@ textarea {
 .button-list__item:hover,
 .button-list__item:focus {
   color: var(--white);
-  background: var(--blue);
+  background: var(--accent);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -544,7 +544,7 @@ textarea {
 
 .portfolio-container__overlay {
   position: absolute;
-  background: var(--blue);
+  background: var(--accent);
   opacity: 0.9;
   padding: 49px 45px 49px 24px;
   transition-property: transform;
@@ -662,12 +662,12 @@ textarea {
 
 .form-style-accent:hover,
 .form-style-accent:focus-within {
-  fill: var(--blue);
-  border-color: var(--blue);
+  fill: var(--accent);
+  border-color: var(--accent);
 }
 
 .modal-form__button {
-  background-color: var(--blue);
+  background-color: var(--accent);
   color: var(--white);
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -684,7 +684,7 @@ textarea {
 
 .modal-form__link {
   text-decoration: underline;
-  color: var(--blue);
+  color: var(--accent);
 }
 
 .modal-form__terms-and-conditions {
@@ -715,6 +715,6 @@ textarea {
 
 .modal-form__check:checked + .checkbox {
   fill: var(--white);
-  background: var(--blue);
-  border-color: var(--blue);
+  background: var(--accent);
+  border-color: var(--accent);
 }
