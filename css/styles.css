@@ -604,7 +604,8 @@ textarea {
   border-radius: 15px;
 }
 
-.close-btn:focus {
+.close-btn:focus,
+.close-btn:hover {
   border: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 15px;
   outline: none;
@@ -656,7 +657,8 @@ textarea {
 
 .modal-form__icon {
   position: absolute;
-  top: 55%;
+  bottom: 20px;
+  transform: translateY(50%);
   left: 15px;
 }
 
@@ -697,6 +699,7 @@ textarea {
   display: flex;
   align-items: center;
   gap: 7px;
+  cursor: pointer;
 }
 .modal-form__check {
   appearance: none;
@@ -717,4 +720,15 @@ textarea {
   fill: var(--white);
   background: var(--accent);
   border-color: var(--accent);
+}
+
+.modal-form__check:focus + .checkbox {
+  outline: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.accent-btn-focus:hover,
+.accent-btn-focus:focus {
+  background-color: #1173d5;
+  transition-property: background;
+  transition: var(--basic-transition);
 }
