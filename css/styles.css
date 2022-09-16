@@ -79,6 +79,17 @@ textarea {
   padding-bottom: 50px;
 }
 
+.accent {
+  color: var(--accent);
+}
+
+.accent-btn-focus:hover,
+.accent-btn-focus:focus {
+  background-color: #1173d5;
+  transition-property: background;
+  transition: var(--basic-transition);
+}
+
 /* logo and links */
 
 .logo,
@@ -93,10 +104,6 @@ textarea {
 }
 .footer__logo {
   color: var(--white);
-}
-
-.accent {
-  color: var(--accent);
 }
 
 .link-style {
@@ -310,7 +317,7 @@ textarea {
   padding-bottom: 30px;
 }
 
-.banner__button {
+.banner__btn {
   color: var(--white);
   background: var(--accent);
   border: none;
@@ -318,6 +325,20 @@ textarea {
   padding: 10px 42px;
   line-height: 1.88;
   border-radius: 4px;
+}
+
+.banner__modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 528px;
+  min-height: 581px;
+  background-color: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
 }
 
 /* container with lorem ipsums */
@@ -465,7 +486,14 @@ textarea {
 
 /* buttons */
 
-.button-list__item {
+.btn-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding-bottom: 50px;
+}
+
+.btn-list__item {
   font-weight: 500;
   text-align: center;
   line-height: 1.62;
@@ -477,19 +505,13 @@ textarea {
   transition: var(--basic-transition);
 }
 
-.button-list__item:hover,
-.button-list__item:focus {
+.btn-list__item:hover,
+.btn-list__item:focus {
   color: var(--white);
   background: var(--accent);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-}
-.button-list {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  padding-bottom: 50px;
 }
 
 /* portfolio items */
@@ -579,21 +601,9 @@ textarea {
   transition: var(--basic-transition);
 }
 
-.banner__modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
-  background-color: var(--white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 40px;
-}
+/* modal styles */
 
-.close-btn {
+.modal-form__close-btn {
   position: absolute;
   background-color: var(--white);
   top: 8px;
@@ -604,8 +614,8 @@ textarea {
   border-radius: 15px;
 }
 
-.close-btn:focus,
-.close-btn:hover {
+.modal-form__close-btn:focus,
+.modal-form__close-btn:hover {
   border: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 15px;
   outline: none;
@@ -633,7 +643,7 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.input-features {
+.modal-form__input-features {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   width: 448px;
@@ -648,7 +658,7 @@ textarea {
   resize: none;
 }
 
-.text-style {
+.modal-form__text-style {
   color: var(--grey);
   font-size: 12px;
   line-height: 1.17;
@@ -660,12 +670,6 @@ textarea {
   bottom: 20px;
   transform: translateY(50%);
   left: 15px;
-}
-
-.form-style-accent:hover,
-.form-style-accent:focus-within {
-  fill: var(--accent);
-  border-color: var(--accent);
 }
 
 .modal-form__button {
@@ -682,11 +686,6 @@ textarea {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-
-.modal-form__link {
-  text-decoration: underline;
-  color: var(--accent);
 }
 
 .modal-form__terms-and-conditions {
@@ -706,7 +705,7 @@ textarea {
   -webkit-appearance: none;
   cursor: pointer;
 }
-.checkbox {
+.modal-form__checkbox {
   border: 2px var(--charcoal) solid;
   border-radius: 2px;
   background-color: var(--white);
@@ -716,19 +715,19 @@ textarea {
   transition: var(--basic-transition);
 }
 
-.modal-form__check:checked + .checkbox {
+.modal-form__check:checked + .modal-form__checkbox {
   fill: var(--white);
   background: var(--accent);
   border-color: var(--accent);
 }
 
-.modal-form__check:focus + .checkbox {
-  outline: 2px solid rgba(0, 0, 0, 0.8);
+.modal-form__check:focus + .modal-form__checkbox {
+  border: none;
+  border: 2px solid var(--accent);
 }
 
-.accent-btn-focus:hover,
-.accent-btn-focus:focus {
-  background-color: #1173d5;
-  transition-property: background;
-  transition: var(--basic-transition);
+.form-style-accent:hover,
+.form-style-accent:focus-within {
+  fill: var(--accent);
+  border-color: var(--accent);
 }

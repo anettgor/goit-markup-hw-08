@@ -77,7 +77,7 @@
 
             <button
               type="button"
-              class="banner__button accent-btn-focus"
+              class="banner__btn accent-btn-focus"
               data-modal-open
             >
               Zamów usługe
@@ -661,7 +661,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="banner__modal">
-        <button type="button" class="close-btn" data-modal-close>
+        <button type="button" class="modal-form__close-btn" data-modal-close>
           <svg width="30px" height="30px">
             <use
               href="./images/icon.svg#close-icon"
@@ -673,7 +673,7 @@
           </svg>
         </button>
 
-        <form class="modal-form text-style">
+        <form class="modal-form modal-form__text-style">
           <legend class="modal-form__heading">
             Zostaw swoje dane w formularzu poniżej
           </legend>
@@ -686,7 +686,7 @@
             <input
               type="text"
               name="name"
-              class="input-features form-style-accent"
+              class="modal-form__input-features form-style-accent"
               required
             />
           </label>
@@ -698,7 +698,7 @@
             <input
               type="tel"
               name="phone"
-              class="input-features form-style-accent"
+              class="modal-form__input-features form-style-accent"
               required
             />
           </label>
@@ -710,7 +710,7 @@
             <input
               type="email"
               name="email"
-              class="input-features form-style-accent"
+              class="modal-form__input-features form-style-accent"
               required
             />
           </label>
@@ -718,7 +718,7 @@
             Komentarz
             <textarea
               name="comment"
-              class="modal-form__textarea input-features form-style-accent"
+              class="modal-form__textarea modal-form__input-features form-style-accent"
               placeholder="Wprowadź tekst"
             ></textarea>
           </label>
@@ -730,12 +730,12 @@
               name="terms-and-conditions"
               value="accepted"
             />
-            <svg class="checkbox" width="16" height="15">
+            <svg class="modal-form__checkbox" width="16" height="15">
               <use href="./images/icon.svg#icon-tick"></use>
             </svg>
             Oświadczam iż akceptuję
-            <a href="" class="modal-form__link">Regulamin </a> i
-            <a href="" class="modal-form__link">Politykę Prywatności.</a>
+            <a href="" class="accent link-underline">Regulamin </a> i
+            <a href="" class="accent link-underline">Politykę Prywatności.</a>
             <!-- <svg width="11" height="8" class="modal-form__icon">
               <use href="./images/icon.svg#icon-tick"></use>
             </svg> -->
