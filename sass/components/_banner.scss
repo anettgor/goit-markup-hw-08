@@ -1,6 +1,3 @@
-@import "./../utils/variables";
-@import "./../utils/mixins";
-
 .banner {
   background: $footer-background; /*FALLBACK COLOR*/
   background-image: linear-gradient(
