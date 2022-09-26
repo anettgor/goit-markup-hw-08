@@ -19,7 +19,6 @@
   }
   &__title {
     color: $primary;
-
     font-size: map-get($font-size, banner-title);
     font-weight: map-get($font-weight, extrabold);
     line-height: 1.36;
