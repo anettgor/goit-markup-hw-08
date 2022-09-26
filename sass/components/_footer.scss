@@ -22,7 +22,7 @@
   }
 
   &__address-item-container {
-    @include centered-flex(row);
+    @include flex(column);
     gap: 9px;
   }
 

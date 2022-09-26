@@ -18,3 +18,8 @@
   justify-content: $justify-content;
   align-items: $align-items;
 }
+
+@mixin flex($flex-direction) {
+  display: flex;
+  flex-direction: $flex-direction;
+}

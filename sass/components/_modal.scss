@@ -35,11 +35,12 @@
   }
 
   &__box {
-    @include centered-flex(row);
+    @include flex(column);
+    align-items: center;
     row-gap: 10px;
   }
   &__label {
-    @include centered-flex(row);
+    @include flex(column);
     position: relative;
 
     &--focused {

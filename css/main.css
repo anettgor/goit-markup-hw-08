@@ -284,9 +284,7 @@ button {
 }
 .footer__address-item-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   gap: 9px;
 }
 .footer__address {
@@ -333,7 +331,7 @@ button {
 }
 .what-we-do__list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -486,16 +484,13 @@ button {
 }
 .modal-form__box {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   row-gap: 10px;
 }
 .modal-form__label {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   position: relative;
 }
 .modal-form__label--focused {

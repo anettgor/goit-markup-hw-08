@@ -5,7 +5,7 @@
   padding-top: 94px;
 
   &__list {
-    @include centered-flex(column);
+    @include centered-flex(row);
     gap: 30px;
   }
 
