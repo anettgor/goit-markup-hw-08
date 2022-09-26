@@ -1,6 +1,3 @@
-@import "./../utils/variables";
-@import "./../utils/mixins";
-
 .navbar {
   @include centered-flex(row);
   padding-top: 25px;

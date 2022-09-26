@@ -1,6 +1,3 @@
-@import "./../utils/variables";
-@import "./../utils/mixins";
-
 .footer {
   background-color: $footer-background;
   font-size: map-get($font-size, standard);
