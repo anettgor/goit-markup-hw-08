@@ -1,0 +1,41 @@
+@import "./../utils/variables";
+@import "./../utils/mixins";
+
+.footer {
+  background-color: $footer-background;
+  font-size: 14px;
+  line-height: 1.19;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__item {
+    color: $footer-links;
+    font-style: normal;
+    line-height: 1.71;
+    transition-property: color;
+    @include transition;
+
+    &:hover,
+    &:focus {
+      @include icon-features($accent);
+    }
+  }
+
+  &__address-item-container {
+    @include centered-flex(column);
+    gap: 9px;
+  }
+
+  &__address {
+    color: $primary;
+    line-height: 1.71;
+    font-style: normal;
+    padding-top: 20px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}

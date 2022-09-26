@@ -1,0 +1,32 @@
+@import "./../utils/variables";
+@import "./../utils/mixins";
+
+.social-media {
+  @include centered-flex(column);
+  gap: 10px;
+
+  &__title {
+    color: $primary;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+
+  &__logo {
+    background: $footer-icon;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $primary;
+    transition-property: background;
+    @include transition;
+
+    &--focused:hover svg,
+    &--focused:focus svg {
+      background: $accent;
+    }
+  }
+}

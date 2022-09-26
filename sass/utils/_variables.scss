@@ -1,0 +1,39 @@
+$standard-font: "Roboto", sans-serif;
+$logo-font: "Raleway", sans-serif;
+
+$font-weight: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+  "extrabold": 900,
+);
+
+$font-size: (
+  "standard": 14px,
+  "enlarged": 16px,
+  "cardheader": 18px,
+  "section-header": 36px,
+  "logo": 26px,
+  "banner-title": 44px,
+);
+
+$letter-spacing: (
+  "standard": 0.03em,
+  "header": 0.06em,
+  "links": 0.02em,
+);
+
+// colors
+
+$primary: #fff;
+$black: #000;
+$section-background: #f5f4fa;
+$accent: #2196f3;
+$primary-color-text: #757575;
+$secondary-color-text: #212121;
+$footer-background: #2f303a;
+$product-border: #eeeeee;
+$footer-links: #ffffff99;
+$header-border: #ececec;
+$footer-icon: rgba(255, 255, 255, 0.1);
+$icon-color: #afb1b8;

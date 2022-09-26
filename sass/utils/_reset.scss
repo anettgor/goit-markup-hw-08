@@ -1,0 +1,38 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+}
+
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+}
+
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: var(--fontColorMain);
+  background: var(--colorWhite);
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}

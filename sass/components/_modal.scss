@@ -1,0 +1,164 @@
+@import "./../utils/variables";
+@import "./../utils/mixins";
+
+.modal-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 528px;
+  min-height: 581px;
+  background-color: $primary;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+
+  &__close-btn {
+    position: absolute;
+    background-color: $primary;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition-property: border;
+    @include transition;
+
+    &:focus,
+    &:hover {
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      border-radius: 15px;
+      outline: none;
+    }
+  }
+
+  &__box {
+    @include centered-flex(column);
+    row-gap: 10px;
+  }
+  &__label {
+    @include centered-flex(column);
+    position: relative;
+
+    &--focused {
+      transition-property: fill, border-color;
+      @include transition;
+    }
+
+    &--focused:hover,
+    &--focused:focus-within {
+      fill: $accent;
+      border-color: $accent;
+    }
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  &__input-features {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 448px;
+    height: 40px;
+    padding: 14px 42px;
+    margin-top: 4px;
+  }
+
+  &__textarea {
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+  }
+
+  &--text-style {
+    color: $primary-color-text;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: 20px;
+    transform: translateY(50%);
+    left: 15px;
+  }
+
+  &__btn {
+    background-color: $accent;
+    color: $primary;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    width: 200px;
+    height: 50px;
+    @include centered-flex(column);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition-property: background;
+    @include transition;
+
+    &--focused:hover,
+    &--focused:focus {
+      background-color: #1173d5;
+    }
+  }
+
+  &__terms-and-conditions {
+    position: relative;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $primary-color-text;
+    margin: 10px 0 20px 0;
+    @include centered-flex(column);
+    gap: 7px;
+    cursor: pointer;
+
+    &--accent-underlined {
+      color: $accent;
+      text-decoration: underline;
+      transition: color;
+      @include transition;
+    }
+    &--accent-underlined:hover,
+    &--accent-underlined:focus {
+      color: #1173d5;
+    }
+  }
+
+  &__check {
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+  }
+}
+
+.modal-form__checkbox {
+  border: 2px $secondary-color-text solid;
+  border-radius: 2px;
+  background-color: $primary;
+  fill: $primary;
+  cursor: pointer;
+  transition-property: background, fill;
+  @include transition;
+
+  .modal-form__check:checked + & {
+    fill: $primary;
+    background: $accent;
+    border-color: $accent;
+  }
+
+  .modal-form__check:focus + & {
+    border: none;
+    border: 2px solid $accent;
+  }
+}

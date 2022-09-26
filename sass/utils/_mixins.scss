@@ -1,0 +1,25 @@
+@mixin transition($duration: 250ms, $timing: cubic-bezier(0.4, 0, 0.2, 1)) {
+  transition-duration: $duration;
+  transition-timing-function: $timing;
+}
+
+@mixin icon-features($color) {
+  color: $color;
+  fill: $color;
+}
+
+@mixin centered-flex(
+  $flex-direction,
+  $justify-content: center,
+  $align-items: center
+) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+@mixin font-set($weight, $height, $spacing) {
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: $spacing;
+}

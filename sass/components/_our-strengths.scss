@@ -1,0 +1,28 @@
+@import "./../utils/variables";
+@import "./../utils/mixins";
+
+.our-strengths {
+  @include centered-flex(column);
+  gap: 30px;
+
+  &__icon {
+    background: $section-background;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+
+  &__content {
+    letter-spacing: 0.03em;
+    line-height: 1.71;
+    font-size: 14px;
+    color: $primary-color-text;
+  }
+}

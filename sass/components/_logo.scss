@@ -1,0 +1,20 @@
+@import "./../utils/variables";
+
+.logo {
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $black;
+
+  &--margin-right {
+    margin-right: 93px;
+  }
+
+  &--accent {
+    color: $accent;
+  }
+  &--footer-font-color {
+    color: $primary;
+  }
+}

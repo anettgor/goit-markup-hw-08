@@ -1,0 +1,72 @@
+@import "./../utils/variables";
+@import "./../utils/mixins";
+
+.portfolio-container {
+  @include centered-flex(column);
+  flex-wrap: wrap;
+
+  gap: 30px;
+  cursor: pointer;
+
+  &__text-border {
+    border: 1px solid $product-border;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+  }
+  &__text {
+    color: $primary-color-text;
+    line-height: 1.88;
+    margin: 0;
+  }
+  &__heading {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    padding-bottom: 4px;
+  }
+  &--text-color {
+    color: $secondary-color-text;
+  }
+
+  &__item {
+    transition-property: box-shadow;
+    @include transition;
+
+    &:hover,
+    &:focus-within {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  &__hidden {
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    overflow: hidden;
+  }
+
+  &__overlay {
+    position: absolute;
+    background: $accent;
+    opacity: 0.9;
+    padding: 49px 45px 49px 24px;
+    transition-property: transform;
+    transform: translateY(100%);
+    @include transition;
+
+    .portfolio-container__item--focused:hover &,
+    .portfolio-container__item--focused:focus-within & {
+      transform: translateY(0);
+    }
+  }
+
+  &__overlay-copy {
+    color: $primary;
+    font-size: 18px;
+    line-height: 1.56;
+    margin: 0;
+  }
+}
