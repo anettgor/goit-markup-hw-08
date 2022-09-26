@@ -15,8 +15,8 @@
     margin-top: -4px;
   }
   &__name {
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: map-get($font-weight, medium);
+    font-size: map-get($font-size, enlarged);
     padding-bottom: 10px;
   }
   &__occupation {
@@ -32,7 +32,7 @@
     border-radius: 0px 0px 4px 4px;
   }
   &__social-media-list {
-    @include centered-flex(column);
+    @include centered-flex(row);
     padding-bottom: 30px;
     gap: 10px;
   }

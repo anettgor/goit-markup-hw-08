@@ -5,16 +5,16 @@
   &__heading {
     padding-bottom: 20px;
     padding-top: 12px;
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: map-get($font-weight, bold);
+    font-size: map-get($font-size, standard);
     line-height: 1.72;
-    letter-spacing: 0.03em;
+    letter-spacing: map-get($letter-spacing, standard);
     text-transform: uppercase;
     color: $primary;
   }
 
   &__box {
-    @include centered-flex(column);
+    @include centered-flex(row);
     gap: 12px;
   }
 
@@ -47,10 +47,10 @@
   border-radius: 4px;
   border: none;
   color: $primary;
-  font-weight: 700;
+  font-weight: map-get($font-weight, bold);
   line-height: 1.88;
-  letter-spacing: 0.06em;
-  @include centered-flex(column);
+  letter-spacing: map-get($letter-spacing, header);
+  @include centered-flex(row);
   width: 200px;
   height: 50px;
   gap: 24px;

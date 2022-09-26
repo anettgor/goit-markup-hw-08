@@ -1,4 +1,5 @@
 @import "./../utils/variables";
+@import "./../utils/mixins";
 .backdrop {
   position: fixed;
   width: 100%;
@@ -6,5 +7,5 @@
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
   transition-property: opacity, visibility;
-  transition: $basic-transition;
+  @include transition;
 }

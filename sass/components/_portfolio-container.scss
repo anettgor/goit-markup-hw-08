@@ -2,7 +2,7 @@
 @import "./../utils/mixins";
 
 .portfolio-container {
-  @include centered-flex(column);
+  @include centered-flex(row);
   flex-wrap: wrap;
 
   gap: 30px;
@@ -20,10 +20,10 @@
     margin: 0;
   }
   &__heading {
-    font-size: 18px;
+    font-size: map-get($font-size, cardheader);
     line-height: 2;
-    letter-spacing: 0.06em;
-    font-weight: 700;
+    letter-spacing: map-get($letter-spacing, header);
+    font-weight: map-get($font-weight, bold);
     padding-bottom: 4px;
   }
   &--text-color {
@@ -65,7 +65,7 @@
 
   &__overlay-copy {
     color: $primary;
-    font-size: 18px;
+    font-size: map-get($font-size, cardheader);
     line-height: 1.56;
     margin: 0;
   }

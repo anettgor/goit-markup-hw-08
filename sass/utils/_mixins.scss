@@ -18,8 +18,3 @@
   justify-content: $justify-content;
   align-items: $align-items;
 }
-@mixin font-set($weight, $height, $spacing) {
-  font-weight: $weight;
-  line-height: $height;
-  letter-spacing: $spacing;
-}

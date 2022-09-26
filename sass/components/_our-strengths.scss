@@ -2,7 +2,7 @@
 @import "./../utils/mixins";
 
 .our-strengths {
-  @include centered-flex(column);
+  @include centered-flex(row);
   gap: 30px;
 
   &__icon {
@@ -13,16 +13,16 @@
     height: 120px;
   }
   &__title {
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: map-get($font-weight, bold);
+    font-size: map-get($font-size, standard);
     line-height: 1.17;
-    letter-spacing: 0.03em;
+    letter-spacing: map-get($letter-spacing, standard);
   }
 
   &__content {
-    letter-spacing: 0.03em;
+    letter-spacing: map-get($letter-spacing, standard);
     line-height: 1.71;
-    font-size: 14px;
+    font-size: map-get($font-size, standard);
     color: $primary-color-text;
   }
 }

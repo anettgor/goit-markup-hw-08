@@ -75,6 +75,8 @@ button {
 
 .navbar {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   padding-top: 25px;
   padding-bottom: 24px;
@@ -87,6 +89,9 @@ button {
 }
 .navbar__box {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
   margin-left: auto;
 }
@@ -98,9 +103,7 @@ button {
   color: #212121;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.17;
-  letter-spacing: 0.02em;
   transition-property: color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -130,12 +133,15 @@ button {
 
 .social-media {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 .social-media__title {
   color: #fff;
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-top: 12px;
@@ -167,6 +173,9 @@ button {
 }
 .newsletter__box {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 12px;
 }
 .newsletter__input {
@@ -199,8 +208,9 @@ button {
   line-height: 1.88;
   letter-spacing: 0.06em;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: 200px;
   height: 50px;
   gap: 24px;
@@ -230,10 +240,10 @@ button {
 }
 .banner__title {
   color: #fff;
-  letter-spacing: 0.06em;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   padding-bottom: 30px;
 }
@@ -274,7 +284,9 @@ button {
 }
 .footer__address-item-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 9px;
 }
 .footer__address {
@@ -291,6 +303,9 @@ button {
 
 .our-strengths {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 .our-strengths__icon {
@@ -318,7 +333,8 @@ button {
 }
 .what-we-do__list {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 30px;
 }
@@ -332,7 +348,6 @@ button {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.17;
-  letter-spacing: 0.03em;
   color: #fff;
   background: rgba(47, 48, 58, 0.8);
   width: 100%;
@@ -374,7 +389,9 @@ button {
 }
 .our-team__social-media-list {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   padding-bottom: 30px;
   gap: 10px;
 }
@@ -385,7 +402,8 @@ button {
   cursor: pointer;
   border-radius: 50%;
   transition-property: background, fill;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-team__social-media--focused:hover svg, .our-team__social-media--focused:focus svg {
   background: #2196f3;
@@ -394,6 +412,9 @@ button {
 
 .clients {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 .clients__logo {
@@ -404,6 +425,9 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   cursor: pointer;
@@ -420,7 +444,8 @@ button {
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
   transition-property: opacity, visibility;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -461,13 +486,16 @@ button {
 }
 .modal-form__box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   row-gap: 10px;
 }
 .modal-form__label {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 .modal-form__label--focused {
@@ -503,7 +531,7 @@ button {
   color: #757575;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
 }
 .modal-form__icon {
   position: absolute;
@@ -520,8 +548,9 @@ button {
   width: 200px;
   height: 50px;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -540,6 +569,8 @@ button {
   color: #757575;
   margin: 10px 0 20px 0;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 7px;
   cursor: pointer;
@@ -582,7 +613,9 @@ button {
 
 .btn-list {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 8px;
   padding-bottom: 50px;
 }
@@ -607,8 +640,10 @@ button {
 
 .portfolio-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
   cursor: pointer;
 }
@@ -635,7 +670,8 @@ button {
 }
 .portfolio-container__item {
   transition-property: box-shadow;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-container__item:hover, .portfolio-container__item:focus-within {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -653,7 +689,8 @@ button {
   padding: 49px 45px 49px 24px;
   transition-property: transform;
   transform: translateY(100%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-container__item--focused:hover .portfolio-container__overlay, .portfolio-container__item--focused:focus-within .portfolio-container__overlay {
   transform: translateY(0);

@@ -2,13 +2,14 @@
 @import "./../utils/mixins";
 
 .social-media {
-  @include centered-flex(column);
+  @include centered-flex(row);
   gap: 10px;
 
   &__title {
     color: $primary;
-    font-weight: 700;
-    font-size: 14px;
+    font-size: map-get($font-size, standard);
+    font-weight: map-get($font-weight, bold);
+
     letter-spacing: 0.03em;
     text-transform: uppercase;
     padding-top: 12px;

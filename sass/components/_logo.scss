@@ -1,9 +1,9 @@
 @import "./../utils/variables";
 
 .logo {
-  font-weight: 700;
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
+  font-weight: map-get($font-weight, bold);
+  font-family: $logo-font;
+  font-size: map-get($font-size, logo);
   line-height: 1.19;
   color: $black;
 

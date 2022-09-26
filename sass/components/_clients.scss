@@ -2,7 +2,7 @@
 @import "./../utils/mixins";
 
 .clients {
-  @include centered-flex(column);
+  @include centered-flex(row);
   gap: 30px;
 
   &__logo {
@@ -11,7 +11,7 @@
     border-radius: 4px;
     transition-property: border-color, fill;
     @include transition;
-    @include centered-flex(column);
+    @include centered-flex(row);
     width: 170px;
     height: 92px;
     cursor: pointer;

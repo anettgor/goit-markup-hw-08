@@ -2,12 +2,12 @@
 @import "./../utils/mixins";
 
 .btn-list {
-  @include centered-flex(column);
+  @include centered-flex(row);
   gap: 8px;
   padding-bottom: 50px;
 
   &__item {
-    font-weight: 500;
+    font-weight: map-get($font-weight, medium);
     text-align: center;
     line-height: 1.62;
     padding: 6px 22px;

@@ -2,7 +2,7 @@
 @import "./../utils/mixins";
 
 .navbar {
-  @include centered-flex(column);
+  @include centered-flex(row);
   padding-top: 25px;
   padding-bottom: 24px;
 
@@ -14,7 +14,7 @@
   }
 
   &__box {
-    @include centered-flex(column);
+    @include centered-flex(row);
     gap: 50px;
     margin-left: auto;
   }
@@ -27,10 +27,10 @@
 .navbar__item {
   color: $secondary-color-text;
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: map-get($font-weight, medium);
+  font-size: map-get($font-weight, standard);
   line-height: 1.17;
-  letter-spacing: 0.02em;
+  letter-spacing: map-get($font-weight, links);
   transition-property: color, fill;
   @include transition;
 

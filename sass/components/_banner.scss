@@ -19,10 +19,11 @@
   }
   &__title {
     color: $primary;
-    letter-spacing: 0.06em;
-    font-size: 44px;
-    font-weight: 900;
+
+    font-size: map-get($font-size, banner-title);
+    font-weight: map-get($font-weight, extrabold);
     line-height: 1.36;
+    letter-spacing: map-get($letter-spacing, header);
     text-transform: uppercase;
     padding-bottom: 30px;
   }
