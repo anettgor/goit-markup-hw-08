@@ -104,7 +104,7 @@
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    transition-property: background;
+    transition-property: background-color;
     @include transition;
 
     &--focused:hover,
@@ -149,12 +149,12 @@
   background-color: $primary;
   fill: $primary;
   cursor: pointer;
-  transition-property: background, fill;
+  transition-property: background-color, fill;
   @include transition;
 
   .modal-form__check:checked + & {
     fill: $primary;
-    background: $accent;
+    background-color: $accent;
     border-color: $accent;
   }
 
