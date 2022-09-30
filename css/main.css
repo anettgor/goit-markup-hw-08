@@ -38,6 +38,14 @@ button {
   cursor: pointer;
 }
 
+.border-bottom {
+  border-bottom: 1px solid #ececec;
+}
+
+.link-underline {
+  text-decoration: underline;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -154,7 +162,7 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-media__logo--focused:hover svg, .social-media__logo--focused:focus svg {
+.social-media__logo-focus:hover svg, .social-media__logo-focus:focus svg {
   background: #2196f3;
 }
 
@@ -368,7 +376,7 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.our-team__social-media--focused:hover svg, .our-team__social-media--focused:focus svg {
+.our-team__social-media-focus:hover svg, .our-team__social-media-focus:focus svg {
   background: #2196f3;
   fill: #fff;
 }
@@ -395,7 +403,7 @@ button {
   height: 92px;
   cursor: pointer;
 }
-.clients__logo--focused:hover svg, .clients__logo--focused:focus svg {
+.clients__logo-focus:hover svg, .clients__logo-focus:focus svg {
   fill: #2196f3;
   border-color: #2196f3;
 }

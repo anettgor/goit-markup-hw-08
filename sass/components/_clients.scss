@@ -13,8 +13,8 @@
     height: 92px;
     cursor: pointer;
 
-    &--focused:hover svg,
-    &--focused:focus svg {
+    &-focus:hover svg,
+    &-focus:focus svg {
       fill: $accent;
       border-color: $accent;
     }

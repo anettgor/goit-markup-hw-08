@@ -20,7 +20,6 @@
     text-transform: uppercase;
     font-size: map-get($font-size, standard);
     font-weight: map-get($font-weight, bold);
-
     line-height: 1.17;
     letter-spacing: map-get($font-weight, standard);
     color: $primary;

@@ -43,8 +43,8 @@
     transition-property: background, fill;
     @include transition;
 
-    &--focused:hover svg,
-    &--focused:focus svg {
+    &-focus:hover svg,
+    &-focus:focus svg {
       background: $accent;
       fill: $primary;
     }
