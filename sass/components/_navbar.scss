@@ -6,9 +6,6 @@
   &__item-box {
     position: relative;
   }
-  &__border {
-    border-bottom: 1px solid $header-border;
-  }
 
   &__box {
     @include centered-flex(row);

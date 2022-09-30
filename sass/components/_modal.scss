@@ -36,19 +36,16 @@
     align-items: center;
     row-gap: 10px;
   }
+
   &__label {
     @include flex(column);
     position: relative;
+    transition-property: fill;
+    @include transition;
 
-    &--focused {
-      transition-property: fill, border-color;
-      @include transition;
-    }
-
-    &--focused:hover,
-    &--focused:focus-within {
+    &:focus-within,
+    &:hover {
       fill: $accent;
-      border-color: $accent;
     }
   }
 
@@ -67,6 +64,12 @@
     height: 40px;
     padding: 14px 42px;
     margin-top: 4px;
+    transition-property: border-color;
+    @include transition;
+
+    &:hover {
+      border-color: $accent;
+    }
   }
 
   &__textarea {
@@ -87,27 +90,6 @@
     bottom: 20px;
     transform: translateY(50%);
     left: 15px;
-  }
-
-  &__btn {
-    background-color: $accent;
-    color: $primary;
-    line-height: 1.88;
-    letter-spacing: map-get($letter-spacing, header);
-    font-weight: map-get($font-weight, bold);
-    width: 200px;
-    height: 50px;
-    @include centered-flex(row);
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    transition-property: background-color;
-    @include transition;
-
-    &--focused:hover,
-    &--focused:focus {
-      background-color: #1173d5;
-    }
   }
 
   &__terms-and-conditions {
@@ -138,25 +120,25 @@
     -webkit-appearance: none;
     cursor: pointer;
   }
-}
 
-.modal-form__checkbox {
-  border: 2px $secondary-color-text solid;
-  border-radius: 2px;
-  background-color: $primary;
-  fill: $primary;
-  cursor: pointer;
-  transition-property: background-color, fill;
-  @include transition;
-
-  .modal-form__check:checked + & {
+  &__checkbox {
+    border: 2px $secondary-color-text solid;
+    border-radius: 2px;
+    background-color: $primary;
     fill: $primary;
-    background-color: $accent;
-    border-color: $accent;
-  }
+    cursor: pointer;
+    transition-property: background-color, fill;
+    @include transition;
 
-  .modal-form__check:focus + & {
-    border: none;
-    border: 2px solid $accent;
+    .modal-form__check:checked + & {
+      fill: $primary;
+      background-color: $accent;
+      border-color: $accent;
+    }
+
+    .modal-form__check:focus + & {
+      border: none;
+      border: 2px solid $accent;
+    }
   }
 }

@@ -15,8 +15,8 @@
     transition-property: box-shadow, background, color;
     @include transition;
 
-    &--focused:hover,
-    &--focused:focus {
+    &:hover,
+    &:focus {
       color: $primary;
       background: $accent;
       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),

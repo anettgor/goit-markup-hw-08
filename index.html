@@ -61,7 +61,7 @@
           </li>
         </ul>
       </div>
-      <div class="navbar__border"></div>
+      <div class="border-bottom"></div>
     </header>
 
     <main>
@@ -75,11 +75,7 @@
               DLA WASZEGO BIZNESU
             </h1>
 
-            <button
-              type="button"
-              class="banner__btn banner__btn--focused"
-              data-modal-open
-            >
+            <button type="button" class="cta" data-modal-open>
               Zamów usługe
             </button>
           </div>
@@ -644,14 +640,11 @@
                   type="email"
                   placeholder="E-mail"
                   name="email"
-                  class="newsletter__input newsletter__input--focused"
+                  class="newsletter__input"
                   required
                 />
               </div>
-              <button
-                type="submit"
-                class="newsletter__btn newsletter__btn--focused"
-              >
+              <button type="submit" class="newsletter__btn cta">
                 Zapisz się
                 <svg width="24" height="24">
                   <use href="./images/icon.svg#icon-send"></use>
@@ -681,7 +674,7 @@
             Zostaw swoje dane w formularzu poniżej
           </legend>
 
-          <label class="modal-form__label modal-form__label--focused">
+          <label class="modal-form__label">
             Imie
             <svg width="12" height="12" class="modal-form__icon">
               <use href="./images/icon.svg#icon-user"></use>
@@ -689,11 +682,11 @@
             <input
               type="text"
               name="name"
-              class="modal-form__input-features modal-form__label--focused"
+              class="modal-form__input-features"
               required
             />
           </label>
-          <label class="modal-form__label modal-form__label--focused">
+          <label class="modal-form__label">
             Telefon
             <svg width="12" height="12" class="modal-form__icon">
               <use href="./images/icon.svg#icon-phone"></use>
@@ -701,11 +694,11 @@
             <input
               type="tel"
               name="phone"
-              class="modal-form__input-features modal-form__label--focused"
+              class="modal-form__input-features"
               required
             />
           </label>
-          <label class="modal-form__label modal-form__label--focused">
+          <label class="modal-form__label">
             Email
             <svg width="12" height="12" class="modal-form__icon">
               <use href="./images/icon.svg#icon-msg"></use>
@@ -713,7 +706,7 @@
             <input
               type="email"
               name="email"
-              class="modal-form__input-features modal-form__label--focused"
+              class="modal-form__input-features"
               required
             />
           </label>
@@ -721,7 +714,7 @@
             Komentarz
             <textarea
               name="comment"
-              class="modal-form__textarea modal-form__input-features modal-form__label--focused"
+              class="modal-form__textarea modal-form__input-features"
               placeholder="Wprowadź tekst"
             ></textarea>
           </label>
@@ -750,12 +743,7 @@
             >
           </label>
 
-          <button
-            type="submit"
-            class="modal-form__btn modal-form__btn--focused"
-          >
-            Wyślij
-          </button>
+          <button type="submit" class="cta">Wyślij</button>
         </form>
       </div>
     </div>

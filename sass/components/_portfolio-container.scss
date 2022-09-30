@@ -54,8 +54,8 @@
     transform: translateY(100%);
     @include transition;
 
-    .portfolio-container__item--focused:hover &,
-    .portfolio-container__item--focused:focus-within & {
+    .portfolio-container__item:hover &,
+    .portfolio-container__item:focus-within & {
       transform: translateY(0);
     }
   }

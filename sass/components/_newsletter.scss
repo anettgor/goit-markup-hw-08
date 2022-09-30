@@ -24,14 +24,11 @@
     height: 50px;
     width: 358px;
     color: $primary;
+    transition-property: fill, border-color;
+    @include transition;
 
-    &--focused {
-      transition-property: fill, border-color;
-      @include transition;
-    }
-
-    &--focused:hover,
-    &--focused:focus-within {
+    &:hover,
+    &:focus-within {
       fill: $accent;
       border-color: $accent;
     }
@@ -39,29 +36,12 @@
 }
 
 .newsletter__btn {
-  background: $accent;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  color: $primary;
-  font-weight: map-get($font-weight, bold);
-  line-height: 1.88;
-  letter-spacing: map-get($letter-spacing, header);
   @include centered-flex(row);
-  width: 200px;
-  height: 50px;
   gap: 24px;
+  transition-property: background;
+  @include transition;
 
   & svg {
     fill: $primary;
-  }
-
-  &--focused {
-    transition-property: background;
-    @include transition;
-  }
-  &--focused:hover,
-  &--focused:focus {
-    background-color: #1173d5;
   }
 }
