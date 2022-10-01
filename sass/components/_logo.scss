@@ -5,14 +5,26 @@
   line-height: 1.19;
   color: $black;
 
-  &--margin-right {
-    margin-right: 93px;
-  }
-
   &--accent {
     color: $accent;
   }
   &--footer-font-color {
     color: $primary;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo--margin-right {
+    margin-right: 83px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+  }
+
+  .logo--margin-right {
+    margin-right: 93px;
   }
 }

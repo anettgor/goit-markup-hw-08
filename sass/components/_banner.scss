@@ -1,11 +1,7 @@
 .banner {
   background: $footer-background; /*FALLBACK COLOR*/
-  background-image: linear-gradient(
-      0deg,
-      rgba(47, 48, 58, 0.4) 0%,
-      rgba(47, 48, 58, 0.4) 100%
-    ),
-    url(./../images/main-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
 
@@ -22,5 +18,101 @@
     letter-spacing: map-get($letter-spacing, header);
     text-transform: uppercase;
     padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    max-width: 767px;
+
+    background-image: linear-gradient(
+        0deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url(./../images/main-banner-m-1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .banner {
+      max-width: 767px;
+
+      background-image: linear-gradient(
+          0deg,
+          rgba(47, 48, 58, 0.4) 0%,
+          rgba(47, 48, 58, 0.4) 100%
+        ),
+        url(./../images/main-banner-m-2x.jpg);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .banner {
+    max-width: 1200px;
+
+    background-image: linear-gradient(
+        0deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url(./../images/main-banner-t-1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .banner {
+      max-width: 1200px;
+
+      background-image: linear-gradient(
+          0deg,
+          rgba(47, 48, 58, 0.4) 0%,
+          rgba(47, 48, 58, 0.4) 100%
+        ),
+        url(./../images/main-banner-t-2x.jpg);
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner {
+    max-width: 1600px;
+    max-height: 600px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url(./../images/main-banner-d-1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .banner {
+      max-width: 1600px;
+      max-height: 600px;
+      background-image: linear-gradient(
+          0deg,
+          rgba(47, 48, 58, 0.4) 0%,
+          rgba(47, 48, 58, 0.4) 100%
+        ),
+        url(./../images/main-banner-d-2x.jpg);
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .banner__title {
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    font-size: 26px;
   }
 }

@@ -18,53 +18,64 @@
   </head>
 
   <body>
-    <header>
-      <div class="container navbar">
-        <a href="./index.html" class="logo logo--margin-right"
-          ><span class="logo--accent">Web</span>Studio</a
-        >
-        <nav>
+    <header class="relative">
+      <div class="container">
+        <div class="navbar">
+          <a href="./index.html" class="logo logo--margin-right"
+            ><span class="logo--accent">Web</span>Studio</a
+          >
+          <nav>
+            <ul class="navbar__box">
+              <li class="navbar__item-box">
+                <a href="./index.html" class="navbar__item">Agencja </a>
+              </li>
+              <li>
+                <a
+                  href="./portfolio.html"
+                  class="navbar__item navbar__item--active"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="" class="navbar__item">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+
           <ul class="navbar__box">
-            <li class="navbar__item-box">
-              <a href="./index.html" class="navbar__item">Agencja </a>
+            <li>
+              <a
+                href="mailto:info@example.com"
+                class="navbar__item navbar__item--light-link"
+              >
+                <svg class="navbar__icon-spacing" width="16" height="12">
+                  <use href="./images/icon.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
             <li>
               <a
-                href="./portfolio.html"
-                class="navbar__item navbar__item--active"
-                >Portfolio</a
+                href="tel:+48111111111"
+                class="navbar__item navbar__item--light-link"
+                ><svg class="navbar__icon-spacing" width="10" height="16">
+                  <use href="./images/icon.svg#icon-smartphone"></use>
+                </svg>
+
+                +48 111 111 111</a
               >
             </li>
-            <li>
-              <a href="" class="navbar__item">Kontakt</a>
-            </li>
           </ul>
-        </nav>
-
-        <ul class="navbar__box">
-          <li>
-            <a
-              href="mailto:info@example.com"
-              class="navbar__item navbar__item--light-link"
-            >
-              <svg class="navbar__icon-spacing" width="16" height="12">
-                <use href="./images/icon.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li>
-            <a
-              href="tel:+48111111111"
-              class="navbar__item navbar__item--light-link"
-              ><svg class="navbar__icon-spacing" width="10" height="16">
-                <use href="./images/icon.svg#icon-smartphone"></use>
-              </svg>
-
-              +48 111 111 111</a
-            >
-          </li>
-        </ul>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="24" height="16">
+              <use href="./images/icon.svg#icon-hamburger-menu"></use>
+            </svg>
+          </button>
+        </div>
       </div>
       <div class="border-bottom"></div>
     </header>
@@ -428,5 +439,69 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="30px" height="30px">
+          <use
+            href="./images/icon.svg#close-icon"
+            x="3"
+            y="7"
+            width="19"
+            height="19"
+          ></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li>
+          <a href="./index.html" class="mobile-menu__link">Agencja</a>
+        </li>
+        <li>
+          <a href="./portfolio.html" class="mobile-menu__link">Portfolio</a>
+        </li>
+        <li><a href="" class="mobile-menu__link">Kontakt</a></li>
+      </ul>
+
+      <ul class="mobile-contact">
+        <li>
+          <a href="tel:+48111111111" class="mobile-contact__item--active">
+            +48 111 111 111</a
+          >
+        </li>
+        <li>
+          <a
+            href="mailto:info@devstudio.com"
+            class="navbar__item navbar__item--light-link mobile-contact__item"
+          >
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+
+      <ul class="mobile-socials">
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link">Instagram</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link">Twitter</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link">Facebook</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
