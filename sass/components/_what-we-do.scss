@@ -33,3 +33,9 @@
     padding-bottom: 27px;
   }
 }
+
+@media (max-width: 1199px) {
+  .what-we-do {
+    display: none;
+  }
+}

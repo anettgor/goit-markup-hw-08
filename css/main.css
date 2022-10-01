@@ -39,8 +39,9 @@ button {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
 }
 .section__title {
   font-size: 36px;
@@ -50,27 +51,46 @@ button {
   padding-bottom: 50px;
 }
 
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .container {
   min-width: 320px;
+  width: 480px;
   margin: 0 auto;
-}
-@media (max-width: 768px) {
-  .container {
-    padding: 0 15px 0;
-    max-width: 768px;
-  }
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media (min-width: 768px) {
   .container {
-    padding: 0 15px 0;
-    min-width: 768px;
-    max-width: 1200px;
+    width: 768px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    max-width: 1200px;
-    padding: 0 15px;
+    width: 1200px;
+  }
+}
+
+.header-container {
+  min-width: 320px;
+  width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .header-container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .header-container {
+    width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -390,14 +410,23 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .our-strengths__icon {
   background: #f5f4fa;
-  padding: 25px 100px;
   margin-bottom: 30px;
-  width: 270px;
+  min-width: 270px;
+  max-width: 450px;
   height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  margin: 0 auto 30px;
+  padding: 25px 0;
+  border-radius: 4px;
 }
 .our-strengths__title {
   font-weight: 700;
@@ -412,6 +441,48 @@ button {
   color: #757575;
 }
 
+@media (max-width: 767px) {
+  .our-strengths__icon {
+    max-width: 450px;
+  }
+  .our-strengths__content {
+    max-width: 450px;
+    padding: 0;
+  }
+  .our-strengths__title {
+    text-align: center;
+    max-width: 450px;
+  }
+}
+@media (min-width: 768px) {
+  .our-strengths__icon {
+    max-width: 354px;
+  }
+  .our-strengths__content {
+    max-width: 354px;
+    padding: 0;
+  }
+  .our-strengths__title {
+    text-align: left;
+    max-width: 354px;
+  }
+}
+@media (min-width: 1200px) {
+  .our-strengths {
+    flex-wrap: nowrap;
+  }
+  .our-strengths__icon {
+    max-width: 270px;
+  }
+  .our-strengths__content {
+    max-width: 270px;
+    padding: 0;
+  }
+  .our-strengths__title {
+    text-align: left;
+    max-width: 270px;
+  }
+}
 .what-we-do {
   padding-top: 94px;
 }
@@ -443,12 +514,19 @@ button {
   padding-bottom: 27px;
 }
 
+@media (max-width: 1199px) {
+  .what-we-do {
+    display: none;
+  }
+}
 .our-team {
   background: #f5f4fa;
 }
 .our-team__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .our-team__text {
@@ -470,6 +548,8 @@ button {
   line-height: 1.19;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 450px;
+  height: 622px;
 }
 .our-team__social-media-list {
   display: flex;
@@ -493,13 +573,46 @@ button {
   background: #2196f3;
   fill: #fff;
 }
+.our-team__photo {
+  width: 450px;
+  height: 460px;
+}
 
+@media (min-width: 768px) {
+  .our-team__item {
+    width: 354px;
+    height: 536px;
+  }
+  .our-team__photo {
+    width: 354px;
+    height: 374px;
+  }
+  .our-team__list {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .our-team__item {
+    width: 270px;
+    height: 428px;
+  }
+  .our-team__list {
+    flex-direction: row;
+  }
+  .our-team__photo {
+    width: 270px;
+    height: 260px;
+  }
+}
 .clients {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .clients__logo {
   fill: #afb1b8;
@@ -673,7 +786,7 @@ button {
   border: 2px solid #2196f3;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199.9px) {
   .modal-form {
     width: 450px;
     height: 609px;

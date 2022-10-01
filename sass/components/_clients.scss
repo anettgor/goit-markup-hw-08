@@ -1,6 +1,7 @@
 .clients {
   @include centered-flex(row);
   gap: 30px;
+  flex-wrap: wrap;
 
   &__logo {
     fill: $icon-color;

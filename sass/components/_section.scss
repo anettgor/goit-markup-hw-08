@@ -1,6 +1,7 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
 
   &__title {
     font-size: map-get($font-size, section-header);
@@ -8,5 +9,12 @@
     line-height: 1.17;
     text-align: center;
     padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
