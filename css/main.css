@@ -52,9 +52,26 @@ button {
 
 .container {
   min-width: 320px;
-  max-width: 1200px;
-  padding: 0 15px;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px 0;
+    max-width: 768px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 0 15px 0;
+    min-width: 768px;
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+  }
 }
 
 .logo {
@@ -287,13 +304,16 @@ button {
 
 @media (max-width: 768px) {
   .banner {
-    max-width: 767px;
+    max-width: 768px;
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(./../images/main-banner-m-1x.jpg);
+  }
+  .banner__container {
+    align-items: center;
   }
 }
 @media (max-width: 768px) and (min-device-pixel-ratio: 2), (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 192dpi), (max-width: 768px) and (min-resolution: 2dppx) {
   .banner {
-    max-width: 767px;
+    max-width: 768px;
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(./../images/main-banner-m-2x.jpg);
   }
 }
@@ -312,14 +332,12 @@ button {
 @media (min-width: 1200px) {
   .banner {
     max-width: 1600px;
-    max-height: 600px;
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(./../images/main-banner-d-1x.jpg);
   }
 }
 @media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
   .banner {
     max-width: 1600px;
-    max-height: 600px;
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(./../images/main-banner-d-2x.jpg);
   }
 }
@@ -525,12 +543,12 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
+  padding: 40px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 40px;
 }
 .modal-form__close-btn {
   position: absolute;
@@ -568,6 +586,7 @@ button {
   fill: #2196f3;
 }
 .modal-form__heading {
+  color: #212121;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.17;
@@ -630,8 +649,8 @@ button {
   color: #1173d5;
 }
 .modal-form__check {
-  appearance: none;
   -webkit-appearance: none;
+  appearance: none;
   cursor: pointer;
 }
 .modal-form__checkbox {
@@ -654,6 +673,25 @@ button {
   border: 2px solid #2196f3;
 }
 
+@media screen and (max-width: 1200px) {
+  .modal-form {
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+  }
+  .modal-form__input-features {
+    width: 370px;
+  }
+  .modal-form__terms-and-conditions {
+    font-size: 12px;
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    width: 528px;
+  }
+}
 .btn-list {
   display: flex;
   flex-direction: row;
