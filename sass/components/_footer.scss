@@ -20,6 +20,7 @@
 
   &__address-item-container {
     @include flex(column);
+    align-items: center;
     gap: 9px;
   }
 
@@ -33,6 +34,42 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    gap: 60px;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__container {
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    align-items: baseline;
+    flex-wrap: wrap;
+    -moz-column-gap: 144px;
+    column-gap: 144px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__container {
     align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+    gap: 0;
+  }
+  .footer__box,
+  .footer__address-item-container {
+    align-items: flex-start;
+  }
+  .footer__item--underlined {
+    text-decoration: underline;
   }
 }

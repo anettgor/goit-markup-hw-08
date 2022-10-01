@@ -252,6 +252,7 @@ button {
 }
 
 .newsletter__heading {
+  align-content: center;
   padding-bottom: 20px;
   padding-top: 12px;
   font-weight: 700;
@@ -263,7 +264,7 @@ button {
 }
 .newsletter__box {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 12px;
@@ -275,7 +276,8 @@ button {
   background: none;
   padding-left: 16px;
   height: 50px;
-  width: 358px;
+  width: 450px;
+  min-width: 358px;
   color: #fff;
   transition-property: fill, border-color;
   transition-duration: 250ms;
@@ -300,6 +302,25 @@ button {
   fill: #fff;
 }
 
+@media (min-width: 768px) {
+  .newsletter__box {
+    gap: 20px;
+  }
+  .newsletter__input {
+    width: 100%;
+    width: 450px;
+  }
+}
+@media (min-width: 1200px) {
+  .newsletter__box {
+    flex-direction: row;
+    gap: 12px;
+  }
+  .newsletter__input {
+    width: 100%;
+    width: 358px;
+  }
+}
 .banner {
   background: #2f303a; /*FALLBACK COLOR*/
   background-repeat: no-repeat;
@@ -391,6 +412,7 @@ button {
 .footer__address-item-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 9px;
 }
 .footer__address {
@@ -402,9 +424,42 @@ button {
 .footer__container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 60px;
+}
+.footer__box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  .footer__container {
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: baseline;
+    flex-wrap: wrap;
+    -moz-column-gap: 144px;
+    column-gap: 144px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__container {
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+    gap: 0;
+  }
+  .footer__box,
+.footer__address-item-container {
+    align-items: flex-start;
+  }
+  .footer__item--underlined {
+    text-decoration: underline;
+  }
+}
 .our-strengths {
   display: flex;
   flex-direction: row;
@@ -807,17 +862,15 @@ button {
 }
 .btn-list {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   gap: 8px;
+  flex-wrap: wrap;
   padding-bottom: 50px;
 }
 .btn-list__item {
   font-weight: 500;
   text-align: center;
   line-height: 1.62;
-  padding: 6px 22px;
+  padding: 6px 28px;
   border: none;
   background: #f5f4fa;
   border-radius: 4px;
@@ -832,6 +885,14 @@ button {
   border-radius: 4px;
 }
 
+@media (min-width: 768px) {
+  .btn-list {
+    justify-content: center;
+  }
+  .btn-list__item {
+    padding: 6px 22px;
+  }
+}
 .portfolio-container {
   display: flex;
   flex-direction: row;
@@ -840,6 +901,10 @@ button {
   flex-wrap: wrap;
   gap: 30px;
   cursor: pointer;
+}
+.portfolio-container__photo {
+  width: 450px;
+  height: 294px;
 }
 .portfolio-container__text-border {
   border: 1px solid #eeeeee;
@@ -872,17 +937,17 @@ button {
 }
 .portfolio-container__hidden {
   position: absolute;
-  width: 370px;
-  height: 294px;
+  width: 450px;
+  height: 300px;
   overflow: hidden;
 }
 .portfolio-container__overlay {
   position: absolute;
   background-color: #2196f3;
   opacity: 0.9;
-  padding: 49px 45px 49px 24px;
+  padding: 77px 24px;
   transition-property: transform;
-  transform: translateY(100%);
+  transform: translateY(150%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -896,6 +961,36 @@ button {
   margin: 0;
 }
 
+@media (min-width: 768px) {
+  .portfolio-container__photo {
+    width: 354px;
+    height: 294px;
+  }
+  .portfolio-container__hidden {
+    position: absolute;
+    width: 354px;
+    height: 300px;
+    overflow: hidden;
+  }
+  .portfolio-container__overlay {
+    padding: 49px 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio-container__photo {
+    width: 370px;
+    height: 294px;
+  }
+  .portfolio-container__hidden {
+    position: absolute;
+    width: 370px;
+    height: 300px;
+    overflow: hidden;
+  }
+  .portfolio-container__overlay {
+    padding: 49px 45px 49px 24px;
+  }
+}
 .cta {
   color: #fff;
   background: #2196f3;
@@ -960,7 +1055,6 @@ button {
   position: absolute;
   transform: translate(-50%);
   top: 21px;
-  right: 25px;
 }
 
 .mobile-menu__link {
