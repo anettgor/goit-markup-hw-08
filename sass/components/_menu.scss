@@ -34,26 +34,24 @@
   transform: translateX(150%);
   transition-property: transform;
   @include transition;
-}
 
-.menu-container.is-open {
-  transform: translateX(0);
-}
+  &.is-open {
+    transform: translateX(0);
+  }
 
-.menu-container .menu-toggle {
-  position: absolute;
-  transform: translate(-50%);
-  top: 21px;
-  right: 0px;
+  & .menu-toggle {
+    position: absolute;
+    transform: translate(-50%);
+    top: 21px;
+    right: 0px;
+  }
 }
-
 .mobile-menu {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-
-.mobile-menu__link {
+&__link {
   color: $secondary-color-text;
   text-decoration: none;
   font-size: map-get($font-size, menu-mobile);
@@ -73,7 +71,7 @@
   }
 }
 
-.mobile-test {
+.mobile-container {
   min-height: 90vh;
   max-height: 100vh;
   display: flex;
