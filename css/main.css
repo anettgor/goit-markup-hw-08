@@ -1016,7 +1016,7 @@ button {
   position: absolute;
   border: none;
   transform: translateY(-50%);
-  right: 15px;
+  right: 25px;
   top: 50%;
   fill: #212121;
   transition-property: fill;
@@ -1041,7 +1041,7 @@ button {
   padding: 48px 40px;
   background-color: #fff;
   z-index: 999;
-  transform: translateX(100%);
+  transform: translateX(150%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1055,11 +1055,16 @@ button {
   position: absolute;
   transform: translate(-50%);
   top: 21px;
+  right: 0px;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .mobile-menu__link {
-  display: block;
-  padding: 10px;
   color: #212121;
   text-decoration: none;
   font-size: 40px;
@@ -1067,6 +1072,8 @@ button {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding-bottom: 32px;
+  min-width: 360px;
 }
 .mobile-menu__link:hover, .mobile-menu__link:focus {
   color: #2196f3;
@@ -1079,7 +1086,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-top: 302px;
+  padding-top: 302px;
   margin-bottom: 64px;
 }
 .mobile-contact__item {
@@ -1098,6 +1105,9 @@ button {
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.02em;
+  padding-left: 0;
+  margin-bottom: 0;
+  min-width: 320px;
 }
 .mobile-socials__link {
   color: #2196f3;
