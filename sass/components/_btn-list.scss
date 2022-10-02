@@ -6,6 +6,7 @@
   padding-bottom: 50px;
 
   &__item {
+    color: $secondary-color-text;
     font-weight: map-get($font-weight, medium);
     text-align: center;
     line-height: 1.62;

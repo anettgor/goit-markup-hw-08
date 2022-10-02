@@ -80,26 +80,26 @@
       <div class="border-bottom"></div>
     </header>
 
-    <main class="section container">
-      <ul class="btn-list container">
-        <li>
-          <button type="button" class="btn-list__item">Wszystkie</button>
-        </li>
-        <li>
-          <button type="button" class="btn-list__item">Strony</button>
-        </li>
-        <li>
-          <button type="button" class="btn-list__item">Aplikacje</button>
-        </li>
-        <li>
-          <button type="button" class="btn-list__item">Dizajn</button>
-        </li>
-        <li>
-          <button type="button" class="btn-list__item">Marketing</button>
-        </li>
-      </ul>
+    <main>
+      <div class="section">
+        <ul class="btn-list">
+          <li>
+            <button type="button" class="btn-list__item">Wszystkie</button>
+          </li>
+          <li>
+            <button type="button" class="btn-list__item">Strony</button>
+          </li>
+          <li>
+            <button type="button" class="btn-list__item">Aplikacje</button>
+          </li>
+          <li>
+            <button type="button" class="btn-list__item">Dizajn</button>
+          </li>
+          <li>
+            <button type="button" class="btn-list__item">Marketing</button>
+          </li>
+        </ul>
 
-      <div class="container">
         <ul class="portfolio-container">
           <li class="portfolio-container__item">
             <a href="" class="portfolio-container--text-color">
@@ -141,7 +141,7 @@
               <img
                 src="./images/portfolio2-1x.jpg"
                 alt="plakat meczu koszykówki"
-               srcset="./images/portfolio2-2x.jpg 2x"
+                srcset="./images/portfolio2-2x.jpg 2x"
                 class="portfolio-container__photo"
               />
               <div class="portfolio-container__text-border">
@@ -330,8 +330,8 @@
       </div>
     </main>
 
-     <footer class="footer">
-      <div class="container footer__container">
+    <footer class="footer">
+      <div class="section footer__container">
         <div class="footer__box">
           <a href="./index.html" class="logo logo--footer-font-color"
             ><span class="logo--accent">Web</span>Studio</a
@@ -342,7 +342,9 @@
                 m. Warszawa, Aleje Jerozolimskie 21
               </li>
               <li>
-                <a href="mailto:info@devstudio.com" class="footer__item footer__item--underlined"
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="footer__item footer__item--underlined"
                   >info@example.com</a
                 >
               </li>
@@ -410,15 +412,12 @@
               </a>
             </li>
           </ul>
-        </div> 
+        </div>
         <div class="footer__box">
           <h5 class="newsletter__heading">Zapisz się do newslettera</h5>
           <div class="newsletter">
-             
-          <form name="newsletter-signup ">
-           
-            <div class="newsletter__box">
-              <div>
+            <form name="newsletter-signup ">
+              <div class="newsletter__box">
                 <label for="newsletter-email-input"></label>
                 <input
                   id="newsletter-email-input"
@@ -428,17 +427,17 @@
                   class="newsletter__input"
                   required
                 />
+
+                <button type="submit" class="newsletter__btn cta">
+                  Zapisz się
+                  <svg width="24" height="24">
+                    <use href="./images/icon.svg#icon-send"></use>
+                  </svg>
+                </button>
               </div>
-              <button type="submit" class="newsletter__btn cta">
-                Zapisz się
-                <svg width="24" height="24">
-                  <use href="./images/icon.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
-        
       </div>
     </footer>
 
@@ -498,7 +497,12 @@
       </ul>
     </div>
 
-   <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+    <script
+      defer=""
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

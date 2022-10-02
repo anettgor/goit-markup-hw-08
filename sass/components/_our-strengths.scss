@@ -1,16 +1,12 @@
 .our-strengths {
-  @include centered-flex(row);
+  @include centered-flex(column);
   flex-wrap: wrap;
   gap: 30px;
 
   &__icon {
     background: $section-background;
-    // padding: 25px 100px;
-    margin-bottom: 30px;
-    min-width: 270px;
     max-width: 450px;
-    height: 120px;
-    @include centered-flex(row);
+    @include centered-flex(column);
     align-items: center;
     margin: 0 auto 30px;
     padding: 25px 0;
@@ -21,6 +17,8 @@
     font-size: map-get($font-size, standard);
     line-height: 1.17;
     letter-spacing: map-get($letter-spacing, standard);
+    text-align: center;
+    max-width: 450px;
   }
 
   &__content {
@@ -28,24 +26,15 @@
     line-height: 1.71;
     font-size: map-get($font-size, standard);
     color: $primary-color-text;
-  }
-}
-
-@media (max-width: 767px) {
-  .our-strengths__icon {
-    max-width: 450px;
-  }
-  .our-strengths__content {
     max-width: 450px;
     padding: 0;
   }
-  .our-strengths__title {
-    text-align: center;
-    max-width: 450px;
-  }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .our-strengths {
+    flex-direction: row;
+  }
   .our-strengths__icon {
     max-width: 354px;
   }
@@ -59,9 +48,10 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .our-strengths {
     flex-wrap: nowrap;
+    flex-direction: row;
   }
   .our-strengths__icon {
     max-width: 270px;

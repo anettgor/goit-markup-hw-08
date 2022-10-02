@@ -5,12 +5,12 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     & {
       width: 768px;
     }
   }
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     & {
       width: 1200px;
     }
@@ -23,13 +23,13 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     & {
       width: 768px;
       margin: 0 auto;
     }
   }
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     & {
       width: 1200px;
       margin: 0 auto;
