@@ -50,27 +50,27 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-}
-&__link {
-  color: $secondary-color-text;
-  text-decoration: none;
-  font-size: map-get($font-size, menu-mobile);
-  font-weight: map-get($font-weight, medium);
-  transition-property: color;
-  @include transition;
-  padding-bottom: 32px;
-  min-width: 360px;
 
-  &:hover,
-  &:focus {
-    color: $accent;
+  &__link {
+    color: $secondary-color-text;
+    text-decoration: none;
+    font-size: map-get($font-size, menu-mobile);
+    font-weight: map-get($font-weight, medium);
+    transition-property: color;
+    @include transition;
+    padding-bottom: 32px;
+    min-width: 360px;
+
+    &:hover,
+    &:focus {
+      color: $accent;
+    }
+
+    &--active {
+      color: $accent;
+    }
   }
-
-  &--active {
-    color: $accent;
-  }
 }
-
 .mobile-container {
   min-height: 90vh;
   max-height: 100vh;
