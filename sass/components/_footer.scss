@@ -31,15 +31,13 @@
   }
 
   &__container {
-    display: flex;
+    @include flex(column);
     justify-content: space-between;
-    flex-direction: column;
     gap: 60px;
   }
   &__box {
-    display: flex;
+    @include flex(column);
     align-items: center;
-    flex-direction: column;
   }
 }
 
@@ -49,7 +47,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
-
     align-items: baseline;
     flex-wrap: wrap;
     -moz-column-gap: 144px;

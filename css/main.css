@@ -325,6 +325,7 @@ button {
   background: #2f303a; /*FALLBACK COLOR*/
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
   max-width: 768px;
   margin: 0 auto;
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(./../images/main-banner-m-1x.jpg);
@@ -336,7 +337,7 @@ button {
 }
 .banner__title {
   color: #fff;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
@@ -355,34 +356,33 @@ button {
 }
 @media (min-width: 768px) {
   .banner {
+    width: 100%;
     max-width: 1200px;
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(./../images/main-banner-t-1x.jpg);
   }
 }
 @media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
   .banner {
+    width: 100%;
     max-width: 1200px;
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(./../images/main-banner-t-2x.jpg);
   }
 }
 @media (min-width: 1200px) {
   .banner {
+    width: 100%;
     max-width: 1600px;
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(./../images/main-banner-d-1x.jpg);
+  }
+  .banner__title {
+    font-size: 44px;
   }
 }
 @media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
   .banner {
+    width: 100%;
     max-width: 1600px;
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(./../images/main-banner-d-2x.jpg);
-  }
-}
-@media (max-width: 1199px) {
-  .banner__title {
-    font-weight: 900;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    font-size: 26px;
   }
 }
 .footer {
@@ -417,14 +417,14 @@ button {
 }
 .footer__container {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
   gap: 60px;
 }
 .footer__box {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -564,8 +564,8 @@ button {
 }
 .our-team__list {
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
+  justify-content: space-around;
   align-content: center;
   flex-wrap: wrap;
   gap: 30px;
@@ -932,7 +932,7 @@ button {
   position: absolute;
   background-color: #2196f3;
   opacity: 0.9;
-  padding: 10px 10px;
+  padding: 30px 20px;
   width: 100%;
   height: 100%;
   transition-property: transform;
@@ -1055,7 +1055,7 @@ button {
 
 .mobile-menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 32px;
 }
 .mobile-menu__link {

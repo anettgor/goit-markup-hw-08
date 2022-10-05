@@ -2,8 +2,7 @@
   background: $footer-background; /*FALLBACK COLOR*/
   background-repeat: no-repeat;
   background-size: cover;
-  // max-width: 1600px;
-
+  width: 100%;
   max-width: 768px;
   margin: 0 auto;
   background-image: linear-gradient(
@@ -20,7 +19,7 @@
   }
   &__title {
     color: $primary;
-    font-size: map-get($font-size, banner-title);
+    font-size: map-get($font-size, logo-big);
     font-weight: map-get($font-weight, extrabold);
     line-height: 1.36;
     letter-spacing: map-get($letter-spacing, header);
@@ -50,8 +49,8 @@
 
 @media (min-width: 768px) {
   .banner {
+    width: 100%;
     max-width: 1200px;
-
     background-image: linear-gradient(
         0deg,
         rgba(47, 48, 58, 0.4) 0%,
@@ -65,6 +64,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .banner {
+      width: 100%;
       max-width: 1200px;
 
       background-image: linear-gradient(
@@ -79,6 +79,7 @@
 
 @media (min-width: 1200px) {
   .banner {
+    width: 100%;
     max-width: 1600px;
 
     background-image: linear-gradient(
@@ -87,6 +88,10 @@
         rgba(47, 48, 58, 0.4) 100%
       ),
       url(./../images/main-banner-d-1x.jpg);
+
+    &__title {
+      font-size: map-get($font-size, banner-title);
+    }
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -94,6 +99,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .banner {
+      width: 100%;
       max-width: 1600px;
 
       background-image: linear-gradient(
@@ -103,14 +109,5 @@
         ),
         url(./../images/main-banner-d-2x.jpg);
     }
-  }
-}
-
-@media (max-width: 1199px) {
-  .banner__title {
-    font-weight: 900;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    font-size: 26px;
   }
 }
