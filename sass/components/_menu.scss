@@ -47,7 +47,7 @@
   }
 }
 .mobile-menu {
-  @include flex(row);
+  @include flex(column);
   gap: 32px;
 
   &__link {

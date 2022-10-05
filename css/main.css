@@ -1055,7 +1055,7 @@ button {
 
 .mobile-menu {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 32px;
 }
 .mobile-menu__link {
