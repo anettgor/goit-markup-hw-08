@@ -735,8 +735,7 @@ button {
   row-gap: 10px;
 }
 .modal-form__label {
-  display: flex;
-  flex-direction: column;
+  display: block;
   position: relative;
   transition-property: fill;
   transition-duration: 250ms;
@@ -756,7 +755,7 @@ button {
 .modal-form__input-features {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 448px;
+  width: 100%;
   height: 40px;
   padding: 14px 42px;
   margin-top: 4px;
@@ -835,12 +834,10 @@ button {
 
 @media screen and (max-width: 1199.9px) {
   .modal-form {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 609px;
     padding: 40px;
-  }
-  .modal-form__input-features {
-    width: 370px;
   }
   .modal-form__terms-and-conditions {
     font-size: 12px;
@@ -849,7 +846,8 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .modal-form {
-    width: 528px;
+    width: 100%;
+    max-width: 528px;
   }
 }
 .btn-list {
