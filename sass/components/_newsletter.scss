@@ -1,6 +1,6 @@
 .newsletter {
   &__heading {
-    align-content: center;
+    text-align: center;
     padding-bottom: 20px;
     padding-top: 12px;
     font-weight: map-get($font-weight, bold);
@@ -24,7 +24,7 @@
     padding-left: 16px;
     height: 50px;
     width: 90vw;
-
+    max-width: 450px;
     color: $primary;
     transition-property: fill, border-color;
     @include transition;
@@ -40,6 +40,7 @@
 .newsletter__btn {
   @include centered-flex(row);
   gap: 24px;
+
   transition-property: background;
   @include transition;
 
@@ -53,8 +54,7 @@
     gap: 20px;
   }
   .newsletter__input {
-    width: 100%;
-    width: 450px;
+    max-width: 450px;
   }
 }
 
@@ -64,7 +64,6 @@
     gap: 12px;
   }
   .newsletter__input {
-    width: 100%;
-    width: 358px;
+    max-width: 358px;
   }
 }

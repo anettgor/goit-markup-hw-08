@@ -39,9 +39,8 @@ button {
 }
 
 .section {
-  min-width: 320px;
-  padding: 60px 15px;
-  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .section__title {
   font-size: 36px;
@@ -58,38 +57,42 @@ button {
   }
 }
 .container {
-  min-width: 320px;
-  width: 480px;
+  width: 100%;
+  max-width: 480px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
   }
 }
 
 .header-container {
-  min-width: 320px;
-  width: 480px;
+  width: 100%;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media screen and (min-width: 768px) {
   .header-container {
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .header-container {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
@@ -224,6 +227,7 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .social-media__title {
@@ -250,7 +254,7 @@ button {
 }
 
 .newsletter__heading {
-  align-content: center;
+  text-align: center;
   padding-bottom: 20px;
   padding-top: 12px;
   font-weight: 700;
@@ -275,6 +279,7 @@ button {
   padding-left: 16px;
   height: 50px;
   width: 90vw;
+  max-width: 450px;
   color: #fff;
   transition-property: fill, border-color;
   transition-duration: 250ms;
@@ -304,8 +309,7 @@ button {
     gap: 20px;
   }
   .newsletter__input {
-    width: 100%;
-    width: 450px;
+    max-width: 450px;
   }
 }
 @media (min-width: 1200px) {
@@ -314,8 +318,7 @@ button {
     gap: 12px;
   }
   .newsletter__input {
-    width: 100%;
-    width: 358px;
+    max-width: 358px;
   }
 }
 .banner {
@@ -406,6 +409,7 @@ button {
   gap: 9px;
 }
 .footer__address {
+  text-align: center;
   color: #fff;
   line-height: 1.71;
   font-style: normal;
@@ -437,7 +441,6 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
-    align-items: flex-start;
     align-content: flex-start;
     flex-direction: row;
     gap: 0;
@@ -593,6 +596,7 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding-bottom: 30px;
   gap: 10px;
 }
@@ -639,26 +643,47 @@ button {
   gap: 30px;
   flex-wrap: wrap;
 }
-.clients__logo {
-  fill: #afb1b8;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  transition-property: border-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.clients__logo-box {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 100%;
+  height: 100%;
+}
+.clients__logo {
+  width: 100%;
+  max-width: 210px;
   height: 92px;
   cursor: pointer;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients__logo-focus:hover svg, .clients__logo-focus:focus svg {
+.clients__logo--color {
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__logo--color:hover, .clients__logo--color:focus {
   fill: #2196f3;
+}
+.clients__logo:hover, .clients__logo:focus {
   border-color: #2196f3;
 }
 
+@media screen and (min-width: 787px) {
+  .clients__logo {
+    max-width: 226px;
+  }
+}
+@media screen and (min-width: 787px) {
+  .clients__logo {
+    max-width: 170px;
+  }
+}
 .backdrop {
   position: fixed;
   width: 100%;
@@ -681,8 +706,10 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 450px;
-  min-height: 609px;
+  width: 100%;
+  max-width: 450px;
+  height: 100%;
+  max-height: 609px;
   padding: 40px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -734,7 +761,8 @@ button {
 .modal-form__input-features {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 448px;
+  width: 100%;
+  max-width: 370px;
   height: 40px;
   padding: 14px 42px;
   margin-top: 4px;
@@ -812,14 +840,6 @@ button {
 }
 
 @media screen and (max-width: 1199.9px) {
-  .modal-form {
-    width: 450px;
-    height: 609px;
-    padding: 40px;
-  }
-  .modal-form__input-features {
-    width: 370px;
-  }
   .modal-form__terms-and-conditions {
     font-size: 12px;
     display: inline-block;
@@ -827,7 +847,12 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .modal-form {
-    width: 528px;
+    width: 100%;
+    max-width: 528px;
+  }
+  .modal-form__input-features {
+    width: 100%;
+    max-width: 448px;
   }
 }
 .btn-list {
@@ -971,7 +996,8 @@ button {
   color: #fff;
   background: #2196f3;
   border: none;
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   height: 50px;
   align-items: center;
   line-height: 1.88;
@@ -987,6 +1013,11 @@ button {
   background-color: #1173d5;
 }
 
+@media (min-width: 1200px) {
+  .cta {
+    width: 200px;
+  }
+}
 .menu-toggle {
   background-color: transparent;
   position: absolute;

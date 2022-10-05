@@ -2,7 +2,8 @@
   color: $primary;
   background: $accent;
   border: none;
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   height: 50px;
   align-items: center;
   line-height: 1.88;
@@ -16,5 +17,11 @@
   &:hover,
   &:focus {
     background-color: #1173d5;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cta {
+    width: 200px;
   }
 }

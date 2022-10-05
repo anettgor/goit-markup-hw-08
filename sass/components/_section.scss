@@ -1,7 +1,6 @@
 .section {
-  min-width: 320px;
-  padding: 60px 15px;
-  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &__title {
     font-size: map-get($font-size, section-header);

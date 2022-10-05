@@ -23,6 +23,7 @@
   }
 
   &__address {
+    text-align: center;
     color: $primary;
     line-height: 1.71;
     font-style: normal;
@@ -58,7 +59,6 @@
 
 @media screen and (min-width: 1200px) {
   .footer__container {
-    align-items: flex-start;
     align-content: flex-start;
     flex-direction: row;
     gap: 0;
