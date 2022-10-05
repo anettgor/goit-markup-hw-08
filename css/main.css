@@ -703,7 +703,8 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 450px;
+  width: 100%;
+  max-width: 450px;
   min-height: 609px;
   padding: 40px;
   background-color: #fff;
@@ -737,6 +738,7 @@ button {
 .modal-form__label {
   display: block;
   position: relative;
+  width: 100%;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -785,16 +787,12 @@ button {
 }
 .modal-form__terms-and-conditions {
   position: relative;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
   margin: 10px 0 20px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 7px;
+  display: inline-block;
   cursor: pointer;
 }
 .modal-form__terms-and-conditions--accent-underlined {
@@ -832,22 +830,17 @@ button {
   border: 2px solid #2196f3;
 }
 
-@media screen and (max-width: 1199.9px) {
-  .modal-form {
-    width: 100%;
-    max-width: 450px;
-    height: 609px;
-    padding: 40px;
-  }
-  .modal-form__terms-and-conditions {
-    font-size: 12px;
-    display: inline-block;
-  }
-}
 @media screen and (min-width: 1200px) {
   .modal-form {
     width: 100%;
     max-width: 528px;
+  }
+  .modal-form__terms-and-conditions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
   }
 }
 .btn-list {

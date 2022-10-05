@@ -3,7 +3,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 450px;
+  width: 100%;
+  max-width: 450px;
   min-height: 609px;
   padding: 40px;
   background-color: $primary;
@@ -40,6 +41,7 @@
   &__label {
     display: block;
     position: relative;
+    width: 100%;
     transition-property: fill;
     @include transition;
 
@@ -96,13 +98,12 @@
 
   &__terms-and-conditions {
     position: relative;
-    font-size: map-get($font-size, standard);
+    font-size: map-get($font-size, small);
     line-height: 1.71;
     letter-spacing: map-get($letter-spacing, standard);
     color: $primary-color-text;
     margin: 10px 0 20px 0;
-    @include centered-flex(row);
-    gap: 7px;
+    display: inline-block;
     cursor: pointer;
 
     &--accent-underlined {
@@ -146,25 +147,15 @@
 }
 
 @media screen and (max-width: 1199.9px) {
-  .modal-form {
-    width: 100%;
-    max-width: 450px;
-    height: 609px;
-    padding: 40px;
-  }
-  // .modal-form__input-features {
-  //   width: 370px;
-  // }
-
-  .modal-form__terms-and-conditions {
-    font-size: 12px;
-    display: inline-block;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .modal-form {
     width: 100%;
     max-width: 528px;
+  }
+  .modal-form__terms-and-conditions {
+    @include centered-flex(row);
+    gap: 7px;
   }
 }
