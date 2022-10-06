@@ -79,7 +79,7 @@
 .mobile-contact {
   @include flex(column);
   gap: 32px;
-  // padding-top: 302px;
+  width: 100%;
   margin-bottom: 64px;
 
   &__item {
@@ -101,7 +101,7 @@
   letter-spacing: map-get($letter-spacing, links);
   padding-left: 0;
   margin-bottom: 0;
-  min-width: 320px;
+  width: 100%;
 
   &__link {
     color: $accent;
