@@ -11,6 +11,10 @@
   &--footer-font-color {
     color: $primary;
   }
+
+  &:focus {
+    outline: 1px solid $accent;
+  }
 }
 
 @media (min-width: 768px) {

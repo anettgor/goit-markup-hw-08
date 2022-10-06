@@ -48,7 +48,6 @@
     flex-wrap: wrap;
     margin: 0 auto;
     align-items: baseline;
-    flex-wrap: wrap;
     -moz-column-gap: 144px;
     column-gap: 144px;
   }
@@ -57,7 +56,6 @@
 @media screen and (min-width: 1200px) {
   .footer__container {
     align-content: flex-start;
-    flex-direction: row;
     gap: 0;
   }
   .footer__box,

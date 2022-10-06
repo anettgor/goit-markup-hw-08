@@ -38,6 +38,10 @@ button {
   cursor: pointer;
 }
 
+:focus {
+  outline: none;
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -96,6 +100,9 @@ button {
 }
 .logo--footer-font-color {
   color: #fff;
+}
+.logo:focus {
+  outline: 1px solid #2196f3;
 }
 
 @media (min-width: 768px) {
@@ -197,6 +204,9 @@ button {
 .navbar__item--active {
   color: #2196f3;
   position: relative;
+}
+.navbar__item--active:focus {
+  outline: 1px solid #2196f3;
 }
 .navbar__item--active::after {
   position: absolute;
@@ -342,21 +352,17 @@ button {
 }
 @media (min-width: 768px) {
   .banner {
-    width: 100%;
     max-width: 1200px;
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(./../images/main-banner-t-1x.jpg);
   }
 }
 @media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
   .banner {
-    width: 100%;
-    max-width: 1200px;
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(./../images/main-banner-t-2x.jpg);
   }
 }
 @media (min-width: 1200px) {
   .banner {
-    width: 100%;
     max-width: 1600px;
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(./../images/main-banner-d-1x.jpg);
   }
@@ -366,8 +372,6 @@ button {
 }
 @media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
   .banner {
-    width: 100%;
-    max-width: 1600px;
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(./../images/main-banner-d-2x.jpg);
   }
 }
@@ -420,7 +424,6 @@ button {
     flex-wrap: wrap;
     margin: 0 auto;
     align-items: baseline;
-    flex-wrap: wrap;
     -moz-column-gap: 144px;
     column-gap: 144px;
   }
@@ -428,7 +431,6 @@ button {
 @media screen and (min-width: 1200px) {
   .footer__container {
     align-content: flex-start;
-    flex-direction: row;
     gap: 0;
   }
   .footer__box,
@@ -783,6 +785,9 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-form__terms-and-conditions--accent-underlined:focus {
+  outline: 1px solid #2196f3;
+}
 .modal-form__terms-and-conditions--accent-underlined:hover, .modal-form__terms-and-conditions--accent-underlined:focus {
   color: #1173d5;
 }
@@ -995,7 +1000,7 @@ button {
     display: none;
   }
 }
-.menu-container {
+.menu__container {
   position: fixed;
   top: 0;
   left: 0;
@@ -1009,22 +1014,23 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-container.is-open {
+.menu__container.is-open {
   transform: translateX(0);
+  width: 100%;
 }
-.menu-container .menu-toggle {
+.menu__container .menu-toggle {
   position: absolute;
   transform: translate(-50%);
   top: 21px;
   right: 0px;
 }
 
-.mobile-menu {
+.mobile__menu {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-.mobile-menu__link {
+.mobile__menu-link {
   color: #212121;
   text-decoration: none;
   font-size: 40px;
@@ -1035,14 +1041,11 @@ button {
   padding-bottom: 32px;
   min-width: 360px;
 }
-.mobile-menu__link:hover, .mobile-menu__link:focus {
-  color: #2196f3;
-}
-.mobile-menu__link--active {
+.mobile__menu-link:hover, .mobile__menu-link:focus {
   color: #2196f3;
 }
 
-.mobile-container {
+.mobile__container {
   min-height: 90vh;
   max-height: 100vh;
   display: flex;
@@ -1065,6 +1068,9 @@ button {
   font-size: 34px;
   color: #2196f3;
 }
+.mobile-contact__item--active:focus {
+  outline: 1px solid #2196f3;
+}
 
 .mobile-socials {
   display: flex;
@@ -1074,18 +1080,19 @@ button {
   font-weight: 500;
   letter-spacing: 0.02em;
   padding-left: 0;
+  gap: 10px;
   margin-bottom: 0;
   width: 100%;
+}
+.mobile-socials__item {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 .mobile-socials__link {
   color: #2196f3;
 }
-.mobile-socials__item:not(:last-child) {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-  padding-right: 10px;
-}
-.mobile-socials__item:not(:first-child) {
-  padding-left: 10px;
+.mobile-socials__link:focus {
+  outline: 1px solid #2196f3;
 }
 
 .border-bottom {

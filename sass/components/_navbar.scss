@@ -88,6 +88,10 @@
     color: $accent;
     position: relative;
 
+    &:focus {
+      outline: 1px solid $accent;
+    }
+
     &::after {
       position: absolute;
       content: "";
