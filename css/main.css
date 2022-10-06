@@ -58,41 +58,24 @@ button {
 }
 .container {
   width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (min-width: 768px) {
-  .container {
-    width: 100%;
-    max-width: 768px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .container {
-    width: 100%;
-    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
 .header-container {
   width: 100%;
-  max-width: 480px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (min-width: 768px) {
-  .header-container {
-    width: 100%;
-    max-width: 768px;
-    margin: 0 auto;
-  }
-}
 @media screen and (min-width: 1200px) {
   .header-container {
-    width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
   }
 }
@@ -456,14 +439,11 @@ button {
 .our-strengths {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   gap: 30px;
 }
 .our-strengths__icon {
   background: #f5f4fa;
-  max-width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -479,14 +459,14 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  max-width: 450px;
+  width: 100%;
 }
 .our-strengths__content {
   letter-spacing: 0.03em;
   line-height: 1.71;
   font-size: 14px;
   color: #757575;
-  max-width: 450px;
+  width: 100%;
   padding: 0;
 }
 
@@ -494,16 +474,11 @@ button {
   .our-strengths {
     flex-direction: row;
   }
-  .our-strengths__icon {
-    max-width: 354px;
-  }
-  .our-strengths__content {
-    max-width: 354px;
-    padding: 0;
+  .our-strengths__item {
+    flex-basis: calc((100% - 30px) / 2);
   }
   .our-strengths__title {
     text-align: left;
-    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -617,8 +592,7 @@ button {
 
 @media (min-width: 768px) {
   .our-team__item {
-    max-width: 354px;
-    height: 536px;
+    flex-basis: calc((100% - 30px) / 2);
   }
   .our-team__list {
     flex-direction: row;
@@ -628,8 +602,8 @@ button {
 }
 @media (min-width: 1200px) {
   .our-team__item {
+    flex-basis: calc((100% - 30px) / 4);
     max-width: 270px;
-    height: 428px;
   }
   .our-team__list {
     flex-direction: row;
@@ -655,7 +629,7 @@ button {
 }
 .clients__logo {
   width: 100%;
-  max-width: 210px;
+  flex-basis: calc((100% - 30px) / 2);
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -673,12 +647,15 @@ button {
 
 @media screen and (min-width: 787px) {
   .clients__logo {
-    max-width: 226px;
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
-@media screen and (min-width: 787px) {
+@media screen and (min-width: 1200px) {
   .clients__logo {
-    max-width: 170px;
+    flex-basis: calc((100% - 60px) / 6);
+  }
+  .clients {
+    flex-wrap: nowrap;
   }
 }
 .backdrop {

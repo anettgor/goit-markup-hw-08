@@ -56,8 +56,8 @@
 }
 @media (min-width: 768px) {
   .our-team__item {
-    max-width: 354px;
-    height: 536px;
+    flex-basis: calc((100% - 30px) / 2);
+    // height: 536px;
   }
 
   .our-team__list {
@@ -69,8 +69,8 @@
 
 @media (min-width: 1200px) {
   .our-team__item {
+    flex-basis: calc((100% - 30px) / 4);
     max-width: 270px;
-    height: 428px;
   }
   .our-team__list {
     flex-direction: row;
