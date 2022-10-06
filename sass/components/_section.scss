@@ -3,7 +3,7 @@
   padding-bottom: 60px;
 
   &__title {
-    font-size: map-get($font-size, section-header);
+    font-size: map-get($font-size, section-mobile);
     font-weight: map-get($font-weight, bold);
     line-height: 1.17;
     text-align: center;
@@ -15,5 +15,10 @@
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
+
+    &__title {
+      font-size: map-get($font-size, section-header);
+      font-weight: map-get($font-weight, bold);
+    }
   }
 }
