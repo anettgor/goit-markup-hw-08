@@ -540,10 +540,12 @@ button {
 .our-team__list {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-content: center;
   flex-wrap: wrap;
   gap: 30px;
+}
+.our-team__photo {
+  width: 100%;
+  flex-grow: 1;
 }
 .our-team__text {
   text-align: center;
@@ -562,7 +564,6 @@ button {
 .our-team__item {
   background: #fff;
   line-height: 1.19;
-  max-width: 450px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -602,8 +603,7 @@ button {
 }
 @media (min-width: 1200px) {
   .our-team__item {
-    flex-basis: calc((100% - 30px) / 4);
-    max-width: 270px;
+    flex-basis: calc((100% - 90px) / 4);
   }
   .our-team__list {
     flex-direction: row;
@@ -856,15 +856,13 @@ button {
 }
 .portfolio-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
   cursor: pointer;
 }
 .portfolio-container__photo {
   width: 100%;
-  max-width: 450px;
-  height: 294px;
+  flex-grow: 1;
 }
 .portfolio-container__text-border {
   border: 1px solid #eeeeee;
@@ -903,7 +901,6 @@ button {
   position: absolute;
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 .portfolio-container__overlay {
   position: absolute;
@@ -927,33 +924,21 @@ button {
   margin: 0;
 }
 
-@media (min-width: 480px) {
-  .portfolio-container__overlay {
-    padding: 77px 24px;
-  }
-}
 @media (min-width: 768px) {
-  .portfolio-container__photo {
-    width: 100%;
-    max-width: 354px;
+  .portfolio-container {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  .portfolio-container__hidden {
-    max-width: 354px;
-    height: 300px;
+  .portfolio-container__item {
+    flex-basis: calc((100% - 30px) / 2);
   }
   .portfolio-container__overlay {
     padding: 49px 24px;
   }
 }
 @media (min-width: 1200px) {
-  .portfolio-container__photo {
-    width: 100%;
-    max-width: 370px;
-    height: 294px;
-  }
-  .portfolio-container__hidden {
-    max-width: 370px;
-    height: 300px;
+  .portfolio-container__item {
+    flex-basis: calc((100% - 60px) / 3);
   }
   .portfolio-container__overlay {
     padding: 49px 45px 49px 24px;
