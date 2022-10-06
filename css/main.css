@@ -1088,6 +1088,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  width: 100%;
   margin-bottom: 64px;
 }
 .mobile-contact__item {
@@ -1108,7 +1109,7 @@ button {
   letter-spacing: 0.02em;
   padding-left: 0;
   margin-bottom: 0;
-  min-width: 320px;
+  width: 100%;
 }
 .mobile-socials__link {
   color: #2196f3;
