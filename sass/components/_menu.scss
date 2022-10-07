@@ -61,9 +61,15 @@
     padding-bottom: 32px;
     min-width: 360px;
 
+    &--active {
+      color: $accent;
+    }
     &:hover,
     &:focus {
       color: $accent;
+    }
+    &:focus {
+      outline: 1px solid $accent;
     }
   }
 }

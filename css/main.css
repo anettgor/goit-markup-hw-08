@@ -1046,8 +1046,14 @@ button {
   padding-bottom: 32px;
   min-width: 360px;
 }
+.mobile__menu-link--active {
+  color: #2196f3;
+}
 .mobile__menu-link:hover, .mobile__menu-link:focus {
   color: #2196f3;
+}
+.mobile__menu-link:focus {
+  outline: 1px solid #2196f3;
 }
 
 .mobile__container {
