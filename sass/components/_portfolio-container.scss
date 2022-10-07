@@ -2,17 +2,20 @@
   @include flex(column);
   gap: 30px;
   cursor: pointer;
+  height: 100%;
 
   &__photo {
     width: 100%;
-    flex-grow: 1;
+    flex: 1;
   }
 
   &__text-border {
+    @include flex(column);
     border: 1px solid $product-border;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
+    padding: 20px 20px;
+    gap: 4px;
+    flex: 1;
+    height: inherit;
   }
   &__text {
     color: $primary-color-text;
@@ -24,15 +27,14 @@
     line-height: 2;
     letter-spacing: map-get($letter-spacing, header);
     font-weight: map-get($font-weight, bold);
-    padding-bottom: 4px;
-  }
-  &--text-color {
-    color: $secondary-color-text;
   }
 
   &__item {
     transition-property: box-shadow;
     @include transition;
+    @include flex(column);
+    justify-content: flex-start;
+    width: 100%;
 
     &:hover,
     &:focus-within {
@@ -83,6 +85,7 @@
   }
   .portfolio-container__item {
     flex-basis: calc((100% - 30px) / 2);
+    align-items: stretch;
   }
 
   .portfolio-container__overlay {
