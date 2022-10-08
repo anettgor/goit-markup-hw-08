@@ -12,7 +12,6 @@
 
   &__box {
     @include centered-flex(column);
-    gap: 20px;
   }
 
   &__input {
@@ -38,7 +37,7 @@
 .newsletter__btn {
   @include centered-flex(row);
   gap: 24px;
-
+  margin-top: 20px;
   transition-property: background;
   @include transition;
 
