@@ -25,9 +25,10 @@
     @include transition;
 
     &:hover,
-    &:focus {
+    &:focus-within {
       border-color: $accent;
     }
+
     &:hover svg,
     &:focus-within svg {
       fill: $accent;

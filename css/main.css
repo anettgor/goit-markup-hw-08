@@ -640,7 +640,7 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients__logo:hover, .clients__logo:focus {
+.clients__logo:hover, .clients__logo:focus-within {
   border-color: #2196f3;
 }
 .clients__logo:hover svg, .clients__logo:focus-within svg {
