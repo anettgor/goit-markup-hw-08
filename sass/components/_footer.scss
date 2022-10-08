@@ -27,7 +27,6 @@
     color: $primary;
     line-height: 1.71;
     font-style: normal;
-    padding-top: 20px;
   }
 
   &__container {
@@ -38,6 +37,7 @@
   &__box {
     @include flex(column);
     align-items: center;
+    gap: 20px;
   }
 }
 

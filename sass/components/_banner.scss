@@ -24,7 +24,7 @@
     line-height: 1.36;
     letter-spacing: map-get($letter-spacing, header);
     text-transform: uppercase;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 
     &--broken {
       display: block;
