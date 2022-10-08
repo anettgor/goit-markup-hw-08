@@ -1,8 +1,7 @@
 .navbar {
+  height: 60px;
   display: flex;
-  padding-top: 25px;
   align-items: center;
-  padding-bottom: 16px;
 
   &__item-box {
     position: relative;
@@ -11,18 +10,17 @@
   &__icon-spacing {
     margin-right: 10px;
   }
-}
+  &__box {
+    @include centered-flex(row);
+    gap: 50px;
+    margin-left: auto;
 
-.navbar__box {
-  @include centered-flex(row);
-  gap: 50px;
-  margin-left: auto;
-}
-
-.navbar__box-contact {
-  @include centered-flex(row);
-  gap: 50px;
-  margin-left: auto;
+    &-contact {
+      @include centered-flex(row);
+      gap: 50px;
+      margin-left: auto;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -44,7 +42,7 @@
     align-items: flex-start;
   }
   .navbar {
-    padding-bottom: 21px;
+    height: 80px;
   }
 }
 
@@ -58,10 +56,6 @@
 
   .navbar__box {
     gap: 46px;
-  }
-
-  .navbar {
-    padding-bottom: 27px;
   }
 }
 
@@ -100,7 +94,7 @@
       height: 4px;
       border-radius: 2px;
       left: 0;
-      bottom: -37px;
+      bottom: -33px;
     }
   }
 }

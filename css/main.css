@@ -119,10 +119,9 @@ button {
   }
 }
 .navbar {
+  height: 60px;
   display: flex;
-  padding-top: 25px;
   align-items: center;
-  padding-bottom: 16px;
 }
 .navbar__item-box {
   position: relative;
@@ -130,7 +129,6 @@ button {
 .navbar__icon-spacing {
   margin-right: 10px;
 }
-
 .navbar__box {
   display: flex;
   flex-direction: row;
@@ -139,7 +137,6 @@ button {
   gap: 50px;
   margin-left: auto;
 }
-
 .navbar__box-contact {
   display: flex;
   flex-direction: row;
@@ -167,7 +164,7 @@ button {
     align-items: flex-start;
   }
   .navbar {
-    padding-bottom: 21px;
+    height: 80px;
   }
 }
 @media (min-width: 1200px) {
@@ -179,9 +176,6 @@ button {
   }
   .navbar__box {
     gap: 46px;
-  }
-  .navbar {
-    padding-bottom: 27px;
   }
 }
 .navbar__item {
@@ -216,7 +210,7 @@ button {
   height: 4px;
   border-radius: 2px;
   left: 0;
-  bottom: -37px;
+  bottom: -33px;
 }
 
 .social-media {
